@@ -1,0 +1,168 @@
+#hospital{
+    margin-top: 45px;
+}
+
+.hospital-area{
+    padding: 0 50px 0 100px;
+    text-align: left;
+}
+
+.hospital-container{
+    width: 100%; 
+    text-align: center; 
+}
+
+.hospital__bottom{
+    width: 100%;
+    margin-top: 35px;
+}
+
+.hospital__bottom ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.hospital__bottom ul li {
+    display: flex;
+    width: 250px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 20px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 마우스 오버 효과 */
+.hospital__bottom ul li:hover {
+    box-shadow: 
+        inset 4px 4px 10px rgba(255, 255, 255, 0.6),  
+        inset -4px -4px 10px rgba(0, 0, 0, 0.2),  
+        5px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); /* 마우스 오버 시 살짝 확대 */
+    filter: brightness(1.2); /* 밝기 증가 */
+}
+
+/*메인 이미지 순서대로*/
+.hospital__bottom li:nth-child(1){
+    background-image: url(/img/01.jpg);
+}
+
+.hospital__bottom li:nth-child(2){
+    background-image: url(/img/02.jpg);
+}
+
+.hospital__bottom li:nth-child(3){
+    background-image: url(/img/03.jpg);
+}
+
+.hospital__bottom li:nth-child(4){
+    background-image: url(/img/04.jpg);
+}
+
+.hospital__bottom li:nth-child(5){
+    background-image: url(/img/05.jpg);
+}
+
+.hospital__bottom li:nth-child(6){
+    background-color: #ffffff;
+}
+
+
+
+.hospital__bottom li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration-line: none;
+    color: #000000;
+}
+
+.hospital__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 24%; */
+    /* margin-top: 90px; */
+    font-size: 18px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 20px;
+    /* margin: 0 auto; */
+    width: 100%;
+}
+
+.hospital__list span{
+    width: 100%;
+    color: #ffffff;
+}
+
+.nav-cont{
+    
+}
+
+.nav-cont ul{
+    text-align: left;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    'a b c d e f g'
+    'a h i j k l m';
+}
+
+.nav-cont li{
+    margin-top: 15px;
+    width: 100%;
+}
+
+
+.nav1{
+    grid-area: a;
+}
+.nav2{
+    grid-area: b;
+}
+.nav3{
+    grid-area: c;
+}
+.nav4{
+    grid-area: d;
+}
+.nav5{
+    grid-area: e;
+}
+.nav6{
+    grid-area: f;
+}
+.nav7{
+    grid-area: g;
+}
+.nav8{
+    grid-area: h;
+}
+.nav9{
+    grid-area: i;
+}
+.nav10{
+    grid-area: j;
+}
+.nav11{
+    grid-area: k;
+}
+.nav12{
+    grid-area: l;
+}
+.nav13{
+    grid-area: m;
+}
