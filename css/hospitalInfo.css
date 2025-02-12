@@ -1,0 +1,179 @@
+#hospital{
+    margin-top: 45px;
+}
+
+.hospital-area{
+    text-align: left;
+}
+
+.hospital-container{
+    width: 100%; 
+    text-align: center; 
+}
+
+.hospitalInfo{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.hospitalInfo button{
+    margin-top: 50px;
+    width: 200px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.hospitalInfo button:hover{
+    
+}
+
+.hospitalInfo__top{
+
+}
+
+.hospitalInfo__top h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.hospitalInfo__midle{
+    margin-top: 30px;
+}
+
+.hospitalInfo__img{
+    background-color: blanchedalmond;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hospitalInfo__img img{
+    width: 100%;
+    height: 400px;
+}
+
+.hospitalInfo__bottom{
+    margin-top: 50px;
+    display: flex;
+}
+
+.hospitalInfo__bottom ul{
+    text-align: left;
+    margin-left: 30px;
+}
+
+.hospitalInfo__bottom li{
+    margin-bottom: 10px;
+}
+
+.hospitalInfo__bottom li h3{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.doctor__img{
+    width: 230px;
+    height: 300px;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+}
+
+.doctor__img img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hospital__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 24%; */
+    /* margin-top: 90px; */
+    font-size: 18px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 20px;
+    /* margin: 0 auto; */
+    width: 100%;
+}
+
+.hospital__list span{
+    width: 100%;
+    color: #ffffff;
+}
+
+
+
+.nav-cont{
+    
+}
+
+.nav-cont ul{
+    text-align: left;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    'a b c d e f g'
+    'a h i j k l m';
+}
+
+.nav-cont li{
+    margin-top: 15px;
+    width: 100%;
+}
+
+
+.nav1{
+    grid-area: a;
+}
+.nav2{
+    grid-area: b;
+}
+.nav3{
+    grid-area: c;
+}
+.nav4{
+    grid-area: d;
+}
+.nav5{
+    grid-area: e;
+}
+.nav6{
+    grid-area: f;
+}
+.nav7{
+    grid-area: g;
+}
+.nav8{
+    grid-area: h;
+}
+.nav9{
+    grid-area: i;
+}
+.nav10{
+    grid-area: j;
+}
+.nav11{
+    grid-area: k;
+}
+.nav12{
+    grid-area: l;
+}
+.nav13{
+    grid-area: m;
+}
