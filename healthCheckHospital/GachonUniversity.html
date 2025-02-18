@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/DoctorInfo.css">
+    <title>KOREA MEDI TOUR</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__logo">
+                <a href="/index.html"><img src="/img/logo.png" alt=""></a>
+            </div>                                                    
+            <ul class="navbar__menu">
+                <li><a href="">회사소개</a></li>
+                <li><a href="">게시판</a></li>
+            </ul>
+            <ul class="navbar__links">
+                <li>
+                    <div class="dropdown_main">
+                        <!-- 드롭다운 메뉴바 -->
+                        <div class="dropdown_bar">
+                            <span>Language</span>
+                            <svg class="drop_icon1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                            <svg class="drop_icon2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                            </svg>
+                        </div>
+                    
+                        <!-- 드롭다운 시 보여질 태그 -->
+                        <div class="dropdown_content">
+                            <a href="#"><div>KOREAN</div></a>
+                            <a href="#"><div>ENGLISH</div></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+    
+            <a href="#" class="navbar__toggleBtn"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </nav>
+    <div id="wrap">
+        <section id="hospital">
+            <div class="hospital-container">
+                <div class="hospital-area">
+                    <h2>건강검진 | 암치료</h2>
+                    <div class="nav-cont">
+                        <ul>
+                            <li class="nav1"><a href="/healthCheckKR.html">전체보기</a></li>
+                            <li class="nav2"><a href="/healthCheckInfoKR.html" style="color: orange; border-bottom: 2px solid orange;">건강검진</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hospitalInfo">
+                    <div class="hospitalInfo__top">
+                        <h3>가천대길병원</h3>
+                    </div>
+                    <div class="hospitalInfo__midle">
+                        <div class="hospitalInfo__img">
+                            <img src="/img/hospitalInfo/가천대길병원.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="hospitalInfo__bottom">
+<!--                         <div class="doctor__img">
+                            <img src="/img/LaserBotoxFillerInfo/DR피부과_텐써마_방숙현.jpg" alt="">
+                        </div>
+                        <ul>
+                            <li><h3>방숙현 원장</h3></li>
+                            <li>이화여자대학교 의과대학 의학사</li>
+                            <li>이화여자대학교 의과대학원 의학 석사</li>
+                            <li>이화여자대학교 의료원 외래교수</li>
+                            <li>대한 피부과의사회 정회원</li>
+                            <li>대한 비만체형학회 정회원</li>
+                        </ul> -->
+                    </div>
+                    <button type="button" onclick="location.href='https://www.gilhospital.com/web/www/home'">병원 홈페이지 바로가기 ></button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <ul>
+                    <li>
+                        <span>KOREA MEDI TOUR</span>
+                        <div class="divider"></div>
+                        <span>개인정보 취급방침</span>
+                        <div class="divider"></div>
+                        <span>이메일 무단 수집 거부</span>
+                    </li>
+                    <li>
+                        <span>상호명:코리아메디투어</span>
+                        <div class="divider"></div>
+                        <span>대표:노영우</span>
+                        <div class="divider"></div>
+                        <span>사업자번호:000-00-00000</span>
+                        <div class="divider"></div>
+                        <span>서울시 강남구 선릉로 612 한일빌딩 1층</span>
+                    </li>
+                    <li>
+                        <span>COPYRIGHTⓒ ORACLELAND. ALL RIGHTS RESERVED.Google+</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- 어썸 아이콘 -->
+<script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
+
+<!-- 반응형 헤더 -->
+<script src="/js/move.js"></script>
+
+<!-- 드롭다운 -->
+<script src="/js/dropdown.js"></script>
+
+<!-- 네비게이션 이벤트 -->
+<script src="/js/navEvent.js"></script>
+
+</html>
