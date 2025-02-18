@@ -50,9 +50,9 @@
     filter: brightness(1.2); /* 밝기 증가 */
 }
 
-/*메인 이미지 순서대로*/
+/* /*메인 이미지 순서대로
 .hospital__bottom li:nth-child(1){
-    background-image: url(/img/LaserBotoxFiller/썸네일_오라클피부과_청담.jpg);
+    background-image: url(/img/LaserBotoxFiller/썸네일_오라클피부과_청담_01.jpg);
 }
 
 .hospital__bottom li:nth-child(2){
@@ -98,7 +98,7 @@
 .hospital__bottom li:nth-child(12){
     background-image: url(/img/LaserBotoxFiller/썸네일_BLS의원_강남.jpg);
 }
-
+*/
 
 .hospital__bottom li a{
     display: block;
