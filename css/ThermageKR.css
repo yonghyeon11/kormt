@@ -38,6 +38,7 @@
     background-position: center;
     background-repeat: no-repeat;
     transition: all 0.3s ease-in-out;
+    cursor: none;
 }
 
 
@@ -49,6 +50,7 @@
         5px 5px 15px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
     filter: brightness(1.2);
+    cursor: pointer;
 }
 
 
