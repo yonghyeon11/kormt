@@ -18,6 +18,7 @@
     list-style: none;
     padding-left: 0;
     width: 55%;
+    font-weight: bold;
 }
 
 
@@ -47,7 +48,45 @@
 
 
 .navbar__menu li a{
-    display: block; padding: 5px 0; font-size: 15px; color: #000;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    display: block; 
+    padding: 5px 0; 
+    font-size: 15px; 
+    color: #000;  
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+/* 드롭다운 메뉴 기본적으로 숨김 */
+.dropdown__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: none;
+    width: 100%;
+    z-index: 100;
+}
+
+.dropdown__menu li {
+    width: 90%;
+}
+
+.dropdown__menu a {
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+}
+
+/* 드롭다운 메뉴 마우스 올렸을 때 보이게 함 */
+.dropdown:hover .dropdown__menu {
+    display: block;
 }
 
 .navbar__links {
