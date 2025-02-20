@@ -31,7 +31,7 @@
     height: 200px;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 20px;
     border-radius: 20px;
     position: relative;
     background-size: cover;
@@ -40,14 +40,14 @@
     transition: all 0.3s ease-in-out;
 }
 
-/* 마우스 오버 효과 */
-.hospital__bottom ul li:hover {
+/* 마우스 오버 효과 (background-image가 있을 때만 적용) */
+.hospital__bottom ul li.has-bg:hover {
     box-shadow: 
         inset 4px 4px 10px rgba(255, 255, 255, 0.6),  
         inset -4px -4px 10px rgba(0, 0, 0, 0.2),  
         5px 5px 15px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05); /* 마우스 오버 시 살짝 확대 */
-    filter: brightness(1.2); /* 밝기 증가 */
+    transform: scale(1.05);
+    filter: brightness(1.2);
 }
 
 /* /*메인 이미지 순서대로
