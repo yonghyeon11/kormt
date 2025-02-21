@@ -38,7 +38,6 @@
     background-position: center;
     background-repeat: no-repeat;
     transition: all 0.3s ease-in-out;
-    cursor: none;
 }
 
 /* 마우스 오버 효과 (background-image가 있을 때만 적용) */
@@ -49,58 +48,9 @@
         5px 5px 15px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
     filter: brightness(1.2);
-    cursor: pointer;
 }
 
-/* /*메인 이미지 순서대로
-.hospital__bottom li:nth-child(1){
-    background-image: url(/img/LaserBotoxFiller/썸네일_오라클피부과_청담_01.jpg);
-}
 
-.hospital__bottom li:nth-child(2){
-    background-image: url(/img/LaserBotoxFiller/썸네일_압구정오라클.jpg);
-}
-
-.hospital__bottom li:nth-child(3){
-    background-image: url(/img/LaserBotoxFiller/썸네일_톡스앤필_강남본점.jpg);
-}
-
-.hospital__bottom li:nth-child(4){
-    background-image: url(/img/LaserBotoxFiller/썸네일_연세더셀피부과.jpg);
-}
-
-.hospital__bottom li:nth-child(5){
-    background-image: url(/img/LaserBotoxFiller/썸네일_아이디피부과.jpg);
-}
-
-.hospital__bottom li:nth-child(6){
-    background-image: url(/img/LaserBotoxFiller/썸네일_바노바기\ 피부과.jpg);
-}
-
-.hospital__bottom li:nth-child(7){
-    background-image: url(/img/LaserBotoxFiller/썸네일_리더스피부과\ 압구정점.jpg);
-}
-
-.hospital__bottom li:nth-child(8){
-    background-image: url(/img/LaserBotoxFiller/썸네일_리더스피부과_청담도산대로점.jpg);
-}
-
-.hospital__bottom li:nth-child(9){
-    background-image: url(/img/LaserBotoxFiller/썸네일_닥터스피부과_신사본점.jpg);
-}
-
-.hospital__bottom li:nth-child(10){
-    background-image: url(/img/LaserBotoxFiller/썸네일_V&MJ피부과.jpg);
-}
-
-.hospital__bottom li:nth-child(11){
-    background-image: url(/img/LaserBotoxFiller/썸네일_DR피부과.jpg);
-}
-
-.hospital__bottom li:nth-child(12){
-    background-image: url(/img/LaserBotoxFiller/썸네일_BLS의원_강남.jpg);
-}
-*/
 
 .hospital__bottom li a{
     display: block;
