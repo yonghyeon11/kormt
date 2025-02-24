@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/notice.css">
     <title>KOREA MEDI TOUR</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
                 <li class="dropdown"><a href="/index.html">협력 병원</a>
                     <ul class="dropdown__menu">
                         <li><a href="/ThermageKR.html">레이저 | 보톡스 | 필러</a></li>
-                        <li><a href="./plastic/eyesKR.html">성형외과</a></li>
+                        <li><a href="/plastic/eyesKR.html">성형외과</a></li>
                         <li><a href="/healthCheckInfoKR.html">건강검진 | 암치료</a></li>
                         <li><a href="/AnSanChi/ophthalmologyKR.html">안과 | 산부인과 | 치과</a></li>
                         <li><a href="/SpinalJoints/VertebraeKR.html">척추 | 관절</a></li>
@@ -60,14 +61,99 @@
     <div id="wrap">
         <section id="section1">
             <div class="section-container">
-                <img style="width: 73%;" src="/img/CompanyInfo/2502_의료관광홈페이지_회사소개_상세.jpg" alt="">
+                <h2>공지사항</h2>
+<!--                 <input  type="text" id="title" placeholder="제목 입력">
+                <button  onclick="addPost()">추가</button> -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>작성일</th>
+                        </tr>
+                    </thead>
+                    <tbody id="board">
+                        <tr class="fixed" onclick="location.href='NoticeKR.html'">
+                            <td>1</td>
+                            <td >공지사항</td>
+                            <td>2025-02-24</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pagination" id="pagination"></div>
+            </div>
+            <div class="bottom__img">
+                <img src="/img/CompanyInfo/2502_의료관광홈페이지_소개배너.jpg" alt="">
             </div>
         </section>
     </div>
     <!-- footer -->
     <div data-include-path="footerKR.html"></div>
-    
 </body>
+<script>
+    let posts = JSON.parse(localStorage.getItem('posts')) || [];
+    const rowsPerPage = 5;
+    let currentPage = 1;
+    
+    function addPost() {
+        const titleInput = document.getElementById('title');
+        const title = titleInput.value.trim();
+        if (title === '') {
+            alert('제목을 입력하세요.');
+            return;
+        }
+        const date = new Date().toISOString().split('T')[0];
+        const newPost = { id: posts.length + 1, title, date };
+        posts.unshift(newPost);
+        localStorage.setItem('posts', JSON.stringify(posts));
+        titleInput.value = '';
+        renderTable();
+    }
+
+    function renderTable() {
+    const table = document.getElementById('board');
+    // 고정된 행을 제외하고 지우기
+    const fixedRows = document.querySelectorAll('#board .fixed');
+    table.innerHTML = '';
+    fixedRows.forEach(row => table.appendChild(row));
+
+    const start = (currentPage - 1) * rowsPerPage;
+    const end = start + rowsPerPage;
+    const paginatedPosts = posts.slice(start, end);
+    
+    paginatedPosts.forEach((post, index) => {
+        const newRow = table.insertRow();
+        newRow.insertCell(0).innerText = posts.length - (start + index);
+        newRow.insertCell(1).innerText = post.title;
+        newRow.insertCell(2).innerText = post.date;
+    });
+
+    renderPagination();
+}
+    
+    function renderPagination() {
+        const pagination = document.getElementById('pagination');
+        pagination.innerHTML = '';
+        const totalPages = Math.ceil(posts.length / rowsPerPage);
+        for (let i = 1; i <= totalPages; i++) {
+            const btn = document.createElement('button');
+            btn.innerText = i;
+            btn.onclick = () => {
+                currentPage = i;
+                renderTable();
+            };
+            btn.classList.toggle('active', i === currentPage);
+            pagination.appendChild(btn);
+        }
+    }
+    
+    renderTable();
+</script>
+
+<script>
+
+</script>
+
 <!-- 어썸 아이콘 -->
 <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
 

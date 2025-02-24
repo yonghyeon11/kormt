@@ -1,0 +1,60 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+td {
+    border-bottom: 1px solid #eee;
+}
+input, button {
+    margin-top: 10px;
+    padding: 8px;
+}
+.pagination {
+    margin-top: 10px;
+    text-align: center;
+}
+.pagination button {
+    margin: 2px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+.pagination button:hover {
+    background-color: #ddd;
+}
+.pagination button.active {
+    font-weight: bold;
+    background-color: #ccc;
+}
+
+.bottom__img{
+    margin-top: 100px;
+}
+
+.section-container thead{
+    width: 100%;
+}
+
+.section-container tbody{
+    width: 100%;
+}
+
+.section-container thead th:nth-child(1){
+    width: 10%;
+}
+
+.section-container thead th:nth-child(3){
+    width: 20%;
+}
