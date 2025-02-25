@@ -43,6 +43,10 @@ input, button {
     margin-top: 100px;
 }
 
+.bottom__img img{
+    width: 100%;
+}
+
 .section-container thead{
     width: 100%;
 }
@@ -57,4 +61,16 @@ input, button {
 
 .section-container thead th:nth-child(3){
     width: 20%;
+}
+
+@media (max-width:1280px){
+    .bottom__img img{
+        background-image: url(/img/CompanyInfo/2502_의료관광홈페이지_소개배너_T_1024x300.jpg);
+    }
+}
+
+@media (max-width:768px){
+    .bottom__img img{
+        background-image: url(/img/CompanyInfo/2502_의료관광홈페이지_소개배너_M_768x300.jpg);
+    }
 }

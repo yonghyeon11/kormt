@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/nav.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/DoctorInfo.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>KOREA MEDI TOUR</title>
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar__container">
             <div class="navbar__logo">
-                <a href="/indexEN.html"><img src="/img/logo.png" alt=""></a>
-            </div>                                                    
+                <a href="./indexEN.html"><img src="/img/logo.png" alt=""></a>
+            </div>
             <ul class="navbar__menu">
                 <li class="dropdown"><a href="/indexEN.html">Affiliated Hospital</a>
                     <ul class="dropdown__menu">
@@ -46,75 +46,38 @@
                                 <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
                             </svg>
                         </div>
-                    
                         <!-- 드롭다운 시 보여질 태그 -->
                         <div class="dropdown_content">
-                            <a href="/doctor/SpinalJoints/Dr_LeeChulWoo.html"><div>KOREAN</div></a>
-                            <a href="/doctor/SpinalJointsEN/Dr_LeeChulWooEN.html"><div>ENGLISH</div></a>
+                            <a href="/CompanyInfoKR.html"><div>KOREAN</div></a>
+                            <a href="/CompanyInfoEN.html"><div>ENGLISH</div></a>
                         </div>
                     </div>
                 </li>
             </ul>
-    
             <a href="#" class="navbar__toggleBtn"><i class="fa-solid fa-bars"></i></a>
         </div>
     </nav>
     <div id="wrap">
-        <section id="hospital">
-            <div class="hospital-container">
-                <div class="hospital-area">
-                    <h2>Spine | Joint</h2>
-                    <div class="nav-cont">
-                        <ul>
-                            <!-- <li class="nav1"><a href="/SpinalJointsEN.html">View All</a></li> -->
-                            <li class="nav2"><a href="/SpinalJoints/VertebraeEN.html" style="color: #2442b3; border-bottom: 2px solid #2442b3;">Spine surgery</a></li>
-                            <li class="nav3" style="font-size: 14px;"><a href="/SpinalJoints/JointEN.html">Shoulder joint surgery</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="hospitalInfo">
-                    <div class="hospitalInfo__top">
-                        <h3>Saehim Hospital</h3>
-                    </div>
-                    <div class="hospitalInfo__midle">
-                        <div class="hospitalInfo__img">
-                            <img src="/img/SpinalJointsEN/새힘병원.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="hospitalInfo__bottom">
-                        <div class="doctor__img">
-                            <img src="/img/SpinalJointsInfo/새힘병원_척추_이철우.jpg" alt="">
-                        </div>
-                        <ul>
-                            <li><h3>Dr.Cheol-woo Lee</h3></li>
-                            <li>Board-certified Neurosurgeon, Doctor of Medicine</li>
-                            <li>Adjunct Professor at Soonchunhyang University</li>
-                            <li>Former Director of the Spine Center at Gangnam Bedro Hospital</li>
-                            <li>Current Director of Saehim Hospital</li>
-                            <li>Recipient of the KOMISS Academic Award (2014)</li>
-                        </ul>
-                    </div>
-                    <button type="button" onclick="location.href='http://saehimhospital.com/'">Go to the hospital website ></button>
-                </div>
+        <section id="section1">
+            <div class="section-container">
+                <img src="/img/CompanyInfo/2502_의료관광홈페이지_회사소개_상세_영문.jpg" alt="">
             </div>
         </section>
     </div>
-<!-- footer -->
-<div data-include-path="/footerEN.html"></div>
+    <!-- footer -->
+    <div data-include-path="footerEN.html"></div>
+    
 </body>
 <!-- 어썸 아이콘 -->
 <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
 
 <!-- 반응형 헤더 -->
-<script src="/js/move.js"></script>
+<script src="./js/move.js"></script>
 
 <!-- 드롭다운 -->
-<script src="/js/dropdown.js"></script>
-
-<!-- 네비게이션 이벤트 -->
-<script src="/js/navEvent.js"></script>
+<script src="./js/dropdown.js"></script>
 
 <!-- footer -->
-<script src="/js/footer.js"></script>
+<script src="./js/footer.js"></script>
 
 </html>

@@ -49,8 +49,8 @@
                         </div>
                         <!-- 드롭다운 시 보여질 태그 -->
                         <div class="dropdown_content">
-                            <a href="/index.html"><div>KOREAN</div></a>
-                            <a href="/indexEN.html"><div>ENGLISH</div></a>
+                            <a href="/NoticeKR.html"><div>KOREAN</div></a>
+                            <a href="/NoticeEN.html"><div>ENGLISH</div></a>
                         </div>
                     </div>
                 </li>
@@ -150,8 +150,22 @@
     renderTable();
 </script>
 
+<!-- 이미지 반응형 변경 스크립트-->
 <script>
+    window.addEventListener("load", updateImage);
+    window.addEventListener("resize", updateImage);
 
+    function updateImage() {
+        const img = document.querySelector(".bottom__img img");
+
+        if (window.innerWidth <= 768) {
+            img.src = "/img/CompanyInfo/2502_의료관광홈페이지_소개배너_M_768x300.jpg";
+        } else if (window.innerWidth <= 1028) {
+            img.src = "/img/CompanyInfo/2502_의료관광홈페이지_소개배너_T_1024x300.jpg";
+        } else {
+            img.src = "/img/CompanyInfo/2502_의료관광홈페이지_소개배너.jpg"; // 기본 이미지
+        }
+    }
 </script>
 
 <!-- 어썸 아이콘 -->
