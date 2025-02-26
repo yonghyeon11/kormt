@@ -107,3 +107,55 @@
 .section__top p{
     margin-top: 10px;
 }
+
+
+@media (max-width:700px){
+    .section__bottom ul li{
+        width: 250px;
+        height: 250px;
+    }
+    
+}
+
+@media (max-width:580px){
+    .section__bottom ul li{
+        width: 200px;
+        height: 200px;
+        
+    }
+    .subjects__bottom{
+        margin-top: 70px;
+        font-size: 15px;
+    }
+
+    .section__top p{
+        padding: 0 20px 0 20px;
+    }
+    
+}
+
+@media (max-width:480px){
+    .section__bottom ul li{
+        width: 180px;
+        height: 180px;
+    }
+
+    .subjects__bottom{
+        margin-top: 45px;
+        font-size: 13px;
+    }
+    
+}
+
+@media (max-width:440px){
+    .section__bottom ul li{
+        width: 130px;
+        height: 130px;
+    }
+
+    .subjects__bottom{
+        margin-top: 45px;
+        font-size: 9px;
+    }
+    
+}
