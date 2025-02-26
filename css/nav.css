@@ -160,6 +160,13 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    .navbar__logo img{
+        width: 80%;
+    }
+
+}
+
 .dropdown_main {
     position: relative;
     display: inline-block;

@@ -42,6 +42,21 @@ footer{
         font-size: 13px;
     }
 
+
+    
+}
+
+
+@media (max-width:680px){
+
+    .footer-top ul{
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width:580px){
+
     .footer-top ul li:nth-child(1) {
         order: 2;
         margin-bottom: 0px;
@@ -64,20 +79,14 @@ footer{
 
     .footer-top ul li{
         display: block;
+    } 
+
+    .divider{
+        background-color: #f9f9fb;
     }
-    
 }
 
-
-@media (max-width:680px){
-
-    .footer-top ul{
-        font-size: 12px;
-    }
-    
-}
-
-@media (max-width:580px){
+@media (max-width:480px){
 
     .footer-top ul{
         font-size: 11px;

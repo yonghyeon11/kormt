@@ -38,3 +38,12 @@ section{
     background-color: #e3e7ee;
     margin: 0 10px 0 10px;
 }
+
+
+@media (max-width:580px){
+
+
+    .divider{
+        background-color: #f9f9fb;
+    }
+}
