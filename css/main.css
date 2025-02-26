@@ -141,7 +141,7 @@
     }
 
     .subjects__bottom{
-        margin-top: 45px;
+        margin-top: 60px;
         font-size: 13px;
     }
     
@@ -149,13 +149,13 @@
 
 @media (max-width:440px){
     .section__bottom ul li{
-        width: 130px;
-        height: 130px;
+        width: 140px;
+        height: 140px;
     }
 
     .subjects__bottom{
         margin-top: 45px;
-        font-size: 9px;
+        font-size: 10px;
     }
     
 }

@@ -9,8 +9,7 @@
 }
 
 .navbar__logo {
-    font-size: 24px;
-    color: violet;
+
 }
 
 .navbar__menu {
@@ -150,6 +149,14 @@
     }
     .dropdown_main{
         display: none;
+    }
+
+    .navbar__logo{
+        text-align: center;
+    }
+
+    .navbar__logo img{
+        width: 90%;
     }
 }
 
