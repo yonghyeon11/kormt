@@ -189,6 +189,10 @@ li a.active {
         margin: 15px 0 15px 0;
     }
 
+    .hospital__list span{
+        font-size: 8px;
+    }
+
 }
 
 @media (max-width:580px){

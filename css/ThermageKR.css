@@ -203,6 +203,10 @@ li a.active {
         width: 200px;
         height: 160px;
     }    
+
+    .hospital__list span{
+        font-size: 8px;
+    }
 }
 
 @media (max-width:480px){
