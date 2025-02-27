@@ -123,4 +123,24 @@
 <!-- footer -->
 <script src="/js/footer.js"></script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const imgElement = document.querySelector(".hospitalInfo__img img");
+    if (!imgElement) return;
+
+    function updateImage() {
+        const screenWidth = window.innerWidth;
+        imgElement.src = screenWidth < 768
+            ? "/img/LaserBotoxFillerInfo/톡스앤필_강남본점_M_768x400.jpg"
+            : screenWidth <= 1024
+            ? "/img/LaserBotoxFillerInfo/톡스앤필_강남본점_T_1024x400.jpg"
+            : "/img/LaserBotoxFillerInfo/톡스앤필_강남본점.jpg";
+    }
+
+    window.addEventListener("resize", updateImage);
+    updateImage();
+});
+
+</script>
+
 </html>
