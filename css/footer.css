@@ -2,6 +2,9 @@ footer{
     width: 100%; 
     background-color: #f9f9fb;
     margin-top: 100px;
+    height: 200px;
+    position: relative;
+    transform: translateY(0%);
 }
 
 .footer-container{
@@ -42,7 +45,13 @@ footer{
         font-size: 13px;
     }
 
-
+/*     .footer-container{
+        position: absolute;
+        bottom: -35px;
+    } */
+    footer{
+        transform: translateY(45%);
+    }
     
 }
 
@@ -56,6 +65,10 @@ footer{
 }
 
 @media (max-width:580px){
+
+    footer{
+        height: 300px;
+    }
 
     .footer-top ul li:nth-child(1) {
         order: 2;

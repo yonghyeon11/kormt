@@ -16,6 +16,9 @@ ul li{
     width: 100%;
     margin: 0 auto;
     max-width: 1200px;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 200px;
 }
 header{
     width: 100%;
@@ -37,6 +40,14 @@ section{
     height: 18px;
     background-color: #e3e7ee;
     margin: 0 10px 0 10px;
+}
+
+@media (max-width:768px){
+
+
+    #wrap{
+        padding-bottom: 0;
+    }
 }
 
 

@@ -157,3 +157,58 @@ li a.active {
 .nav13{
     grid-area: m;
 }
+
+
+@media (max-width:1025px){
+    .hospital-area h2{
+        text-align: center;
+    }
+}
+
+@media (max-width:768px){
+    .nav-cont ul{
+        text-align: center;
+    }
+
+    .nav-cont ul{
+        margin-top: 50px;
+        padding: 0 50px 0 50px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'b c' 
+        'd e' 
+        'f g' 
+        'h i'
+        'j k'
+        'l m'
+    }
+
+    .nav-cont li{
+        margin-top: 0;
+        margin: 15px 0 15px 0;
+    }
+
+}
+
+@media (max-width:580px){
+    .hospital__bottom ul li{
+        width: 200px;
+        height: 160px;
+    }    
+}
+
+@media (max-width:480px){
+    .hospital__bottom ul li{
+        width: 160px;
+        height: 130px;
+    }    
+
+    .hospital__list{
+        font-size: 16px;
+    }
+
+    .hospital__list span:nth-child(1){
+        font-size: 10px;
+    }
+}
