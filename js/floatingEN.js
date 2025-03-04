@@ -1,5 +1,5 @@
 // 플로팅 배너를 동적으로 로드
-fetch("/floating-bannerKR.html")
+fetch("/floating-bannerEN.html")
 .then(response => response.text())
 .then(html => {
     document.getElementById("floatingBannerContainer").innerHTML = html;

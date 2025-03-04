@@ -40,6 +40,7 @@
 }
 
 .floating-container p{
+    color: #656565;
     margin-top: 5px;
 }
 
@@ -52,7 +53,7 @@
     width: 80px;
     height: 40px;
     background-color: #ffffff;
-    color: #111111;
+    color: #656565;
     border: none;
     cursor: pointer;
     font-size: 18px;
@@ -61,16 +62,24 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-weight: bold;
 }
 .floating-button:hover {
+    color: #2442b3;
     background-color: #ffffff;
 }
 
+.floating-button span{
+
+}
+
 .Consultation__inquiry{
+    width: 100%;
     border-bottom: 1px solid gray;
 }
 
 .Consultation__inquiry p{
     margin-bottom: 5px;
     font-weight: bold;
+    color: #656565;
 }
