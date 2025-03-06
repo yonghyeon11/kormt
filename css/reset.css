@@ -42,6 +42,13 @@ section{
     margin: 0 10px 0 10px;
 }
 
+.nav_wrap_mini button{
+    border: none;
+    outline: none;
+    background-color: inherit ;
+    cursor: pointer;
+  }
+
 @media (max-width:768px){
 
 

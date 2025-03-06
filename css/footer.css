@@ -44,6 +44,7 @@ footer{
 
     .footer-top ul{
         font-size: 15px;
+        margin-bottom: 90px;
     }
 
     .footer-top ul li{
@@ -64,6 +65,7 @@ footer{
 
     .footer-container{
         font-weight: bold;
+        height: 250px;
     }
 
     .company__info .divider{
