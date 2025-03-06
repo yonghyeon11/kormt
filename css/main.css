@@ -145,19 +145,29 @@
     
 }
 
+@media (max-width:768px){
+    #section1{
+        margin-top: 10px;
+    }
+
+    .section__bottom{
+        margin-top: 0;
+    }
+}
+
 
 @media (max-width:700px){
     .section__bottom ul li{
         width: 250px;
         height: 250px;
     }
-    
 }
 
 @media (max-width:580px){
     .section__bottom ul li{
         width: 200px;
         height: 200px;
+        margin: 10px;
         
     }
     .subjects__bottom{
