@@ -181,6 +181,10 @@
     font-weight: bold; */
 }
 
+.dropdown_bar span{
+    font-weight: bold;
+}
+
 .dropdown_bar svg {
     vertical-align: middle;
     margin-left: 5px;
