@@ -148,6 +148,7 @@
 @media (max-width:768px){
     #section1{
         margin-top: 10px;
+        margin-bottom: -50px;
     }
 
     .section__bottom{
@@ -206,8 +207,8 @@
 
 @media (max-width:440px){
     .section__bottom ul li{
-        width: 140px;
-        height: 140px;
+        width: 155px;
+        height: 155px;
     }
 
     .subjects__bottom{
