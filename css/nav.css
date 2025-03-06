@@ -8,9 +8,6 @@
     border-bottom: 3px solid #f9f9fb;
 }
 
-.navbar__logo {
-
-}
 
 .navbar__menu {
     display: flex;
@@ -152,17 +149,22 @@
     }
 
     .navbar__logo{
-        text-align: center;
+        text-align: left;
     }
 
     .navbar__logo img{
-        width: 90%;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 480px) {
     .navbar__logo img{
-        width: 80%;
+        width: 100%;
+    }
+
+    .navbar__container{
+        justify-content:flex-start;
+        width: 90%;
     }
 
 }
