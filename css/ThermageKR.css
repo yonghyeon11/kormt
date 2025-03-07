@@ -208,14 +208,23 @@ li a.active {
         font-size: 17px;
     }
 
+    .hospital__bottom ul li{
+        width: 90%;
+        height: 120px;
+        background-size: 100% 100%;
+        /* background-size: contain; */
+    }
+
+    .hospital__list span{
+        display: none;
+    }
+
+
 
 }
 
 @media (max-width:580px){
-    .hospital__bottom ul li{
-        width: 200px;
-        height: 160px;
-    }    
+
 
     .hospital__list span{
         font-size: 8px;
@@ -223,10 +232,10 @@ li a.active {
 }
 
 @media (max-width:480px){
-    .hospital__bottom ul li{
+/*     .hospital__bottom ul li{
         width: 160px;
         height: 130px;
-    }    
+    }     */
 
     .hospital__list{
         font-size: 16px;
