@@ -124,4 +124,23 @@
 <script src="/js/footer.js"></script>
 <script src="/js/Responsive.js"></script>
 <script src="/js/floating.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const imgElement = document.querySelector(".hospitalInfo__img img");
+        if (!imgElement) return;
+    
+        function updateImage() {
+            const screenWidth = window.innerWidth;
+            imgElement.src =  screenWidth < 768
+                ? "/img/hospitalInfo/삼성서울병원_M.jpg"
+                : screenWidth <= 1024
+                "/img/hospitalInfo/삼성서울병원.jpg";
+                
+        }
+    
+        window.addEventListener("resize", updateImage);
+        updateImage();
+    });
+    
+    </script>
 </html>

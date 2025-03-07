@@ -165,7 +165,7 @@ li a.active {
     }
 }
 
-@media (max-width:768px){
+/* @media (max-width:768px){
 
     #hospital{
         margin-top: 10px;
@@ -224,5 +224,139 @@ li a.active {
 
     .hospital__list span:nth-child(1){
         font-size: 10px;
+    }
+}
+ */
+
+ @media (max-width:768px){
+    .nav-cont ul{
+        text-align: center;
+    }
+
+    #hospital{
+        margin-top: 10px;
+    }
+
+    .nav-cont ul{
+        margin-top: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'b c d' 
+        'e f g' 
+        'h i j' 
+        'k l m';
+        gap: 1px;
+
+    }
+
+    .nav-cont ul li a.active {
+        color: #2442b3;
+        font-weight: bold;
+    }
+
+    .nav-cont ul > li{
+        margin-top: 0;
+        border: 1px solid silver;
+        height: 50px;
+        line-height: 50px;
+        margin:-1px;
+        font-size: 17px;
+    }
+
+    .hospital__bottom ul li{
+        width: 90%;
+        height: 220px;
+        background-size: 100% 100%;
+        /* background-size: contain; */
+    }
+
+    .hospital__list span{
+        display: none;
+    }
+}
+
+@media (max-width:660px){
+
+    .hospital__bottom ul li{
+        height: 170px;
+        /* background-size: contain; */
+    }
+}
+
+
+@media (max-width:580px){
+
+    .hospital__bottom ul li{
+        height: 140px;
+        /* background-size: contain; */
+    }
+
+
+    .hospital__list span{
+        font-size: 8px;
+    }
+}
+
+@media (max-width:480px){
+    .hospital__bottom ul li{
+        height: 120px;
+        /* background-size: contain; */
+    }
+    .hospital__list{
+        font-size: 16px;
+    }
+
+    .hospital__list span:nth-child(1){
+        font-size: 10px;
+    }
+}
+
+@media (max-width:460px){
+    .hospital__bottom ul li{
+        height: 115px;
+        /* background-size: contain; */
+    }
+}
+
+@media (max-width:440px){
+    .hospital__bottom ul li{
+        height: 110px;
+        /* background-size: contain; */
+    }
+}
+
+@media (max-width:420px){
+    .hospital__bottom ul li{
+        height: 105px;
+        /* background-size: contain; */
+    }
+}
+
+@media (max-width:400px){
+    .hospital__bottom ul li{
+        height: 100px;
+        /* background-size: contain; */
+    }
+}
+
+@media (max-width:380px){
+    .hospital__bottom ul li{
+        height: 95px;
+        /* background-size: contain; */
+    }
+}
+
+@media (max-width:360px){
+    .hospital__bottom ul li{
+        height: 90px;
+        /* background-size: contain; */
+    }
+}
+
+@media (max-width:340px){
+    .hospital__bottom ul li{
+        height: 85px;
+        /* background-size: contain; */
     }
 }
