@@ -198,27 +198,37 @@ li a.active {
 }
 
 @media (max-width:768px){
+
+    #hospital{
+        margin-top: 10px;
+    }
+
     .nav-cont ul{
         text-align: center;
-    }
-
-    .nav-cont ul{
-        margin-top: 50px;
-        padding: 0 50px 0 50px;
-        grid-template-columns: repeat(2, 1fr);
+        margin-top: 15px;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         grid-template-areas: 
-        'b c' 
-        'd e' 
-        'f g' 
-        'h i'
-        'j k'
-        'l m'
+        'b c d' 
+        'e f g' 
+        'h i j' 
+        'k l m';
+        gap: 1px;
+
     }
 
-    .nav-cont li{
+    .nav-cont ul li a.active {
+        color: #2442b3;
+        font-weight: bold;
+    }
+
+    .nav-cont ul > li{
         margin-top: 0;
-        margin: 15px 0 15px 0;
+        border: 1px solid silver;
+        height: 50px;
+        line-height: 50px;
+        margin:-1px;
+        font-size: 17px;
     }
 
 }

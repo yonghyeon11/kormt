@@ -9,7 +9,7 @@ function hideEmptyListItems() {
 }
 
 function handleResize() {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 769) {
         hideEmptyListItems();
     } else {
         const listItems = document.querySelectorAll('.hospital__bottom li');
