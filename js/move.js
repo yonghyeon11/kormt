@@ -7,7 +7,7 @@ toggleBtn.addEventListener('click', () => {
     links.classList.toggle('active');
 })
 
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".section__bottom ul li").forEach(li => {
         const bgImage = window.getComputedStyle(li).backgroundImage;
         
@@ -26,6 +26,18 @@ document.addEventListener("DOMContentLoaded", function () {
         if (bgImage !== "none") {
             li.classList.add("has-bg");
         }
+    });
+}); */
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".section__bottom ul li.img-no").forEach(li => {
+        li.classList.add("has-bg");
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".hospital__bottom ul li.img-no").forEach(li => {
+        li.classList.add("has-bg");
     });
 });
 

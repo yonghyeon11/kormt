@@ -85,8 +85,7 @@
                 </div>
                 <div class="hospital__bottom">
                     <ul>
-                        <li style="background-image: url(/img/LaserBotoxFiller/썸네일_오라클피부과_청담_03.jpg);">
-                            <li style="background-image: url(/img/LaserBotoxFiller/썸네일_오라클피부과_청담_03.jpg);"></li>
+                        <li>
                             <a href="/doctor/Dr_KimJaeHwa_Ten.html">
                                 <div class="hospital__list">
                                     <span>청담오라클피부과</span>
@@ -94,7 +93,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/LaserBotoxFiller/썸네일_바노바기피부과.jpg);">
+                        <li>
                             <a href="/doctor/Dr_JeonHeeDae.html">
                                 <div class="hospital__list">
                                     <span>바노바기피부과</span>
@@ -102,7 +101,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/LaserBotoxFiller/썸네일_DR피부과.jpg);">
+                        <li>
                             <a href="/doctor/Dr_BangSookHyeon.html">
                                 <div class="hospital__list">
                                     <span>DR피부과</span>
@@ -110,7 +109,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/LaserBotoxFiller/썸네일_연세더셀피부과.jpg);">
+                        <li>
                             <a href="/doctor/Dr_ShimHyeonCheol.html">
                                 <div class="hospital__list">
                                     <span>연세더셀피부과</span>
@@ -118,33 +117,17 @@
                                 </div>
                             </a>
                         </li>
-                        <li >
-                            <a href="#">
-                                <div class="hospital__list">
-
-                                </div>
-                            </a>
+                        <li class="img-no">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
-                        <li >
-                            <a href="#">
-                                <div class="hospital__list">
-
-                                </div>
-                            </a>
+                        <li class="img-no">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
-                        <li >
-                            <a href="#">
-                                <div class="hospital__list">
-
-                                </div>
-                            </a>
+                        <li class="img-no">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
-                        <li >
-                            <a href="#">
-                                <div class="hospital__list">
-
-                                </div>
-                            </a>
+                        <li class="img-no">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
                     </ul>
                 </div>
@@ -155,35 +138,29 @@
         <div id="floatingBannerContainer"></div>
     <!-- footer -->
     <div data-include-path="footerKR.html"></div>
-</body>
-<!-- 어썸 아이콘 -->
-<script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
 
-<!-- 반응형 헤더 -->
-<script src="./js/move.js"></script>
+    <script>
+        function preloadImages() {
+        const images = [
+            "/img/LaserBotoxFiller/썸네일_오라클피부과_청담_03.jpg",
+            "/img/LaserBotoxFiller/썸네일_바노바기피부과.jpg",
+            "/img/LaserBotoxFiller/썸네일_DR피부과.jpg",
+            "/img/LaserBotoxFiller/썸네일_연세더셀피부과.jpg",
+            "/img/LaserBotoxFillerM/썸네일_오라클피부과_청담_03.png",
+            "/img/LaserBotoxFillerM/썸네일_바노바기피부과.png",
+            "/img/LaserBotoxFillerM/썸네일_DR피부과.png",
+            "/img/LaserBotoxFillerM/썸네일_연세더셀피부과.png"
+        ];
 
-<!-- 드롭다운 -->
-<script src="./js/dropdown.js"></script>
-
-<!-- 네비게이션 이벤트 -->
-<script src="./js/navEvent.js"></script>
-
-<!-- footer -->
-<script src="./js/footer.js"></script>
-
-<script src="./js/Responsive.js"></script>
-<script src="./js/floating.js"></script>
-
-<script>
-
-    // 이미지 미리 로드 함수
-        function preloadImages(imageArray) {
-        imageArray.forEach(src => {
+        images.forEach((src) => {
             const img = new Image();
             img.src = src;
         });
         }
-            // 기존 PC 버전 이미지 배열
+
+        function updateBackground() {
+        const listItems = document.querySelectorAll(".hospital__bottom li");
+
         const desktopImages = [
             "/img/LaserBotoxFiller/썸네일_오라클피부과_청담_03.jpg",
             "/img/LaserBotoxFiller/썸네일_바노바기피부과.jpg",
@@ -191,7 +168,6 @@
             "/img/LaserBotoxFiller/썸네일_연세더셀피부과.jpg"
         ];
 
-        // 모바일 버전 이미지 배열
         const mobileImages = [
             "/img/LaserBotoxFillerM/썸네일_오라클피부과_청담_03.png",
             "/img/LaserBotoxFillerM/썸네일_바노바기피부과.png",
@@ -199,23 +175,47 @@
             "/img/LaserBotoxFillerM/썸네일_연세더셀피부과.png"
         ];
 
-        // 이미지 미리 로드 실행
-        preloadImages([...desktopImages, ...mobileImages]);
-
-        function updateBackground() {
-        const listItems = document.querySelectorAll(".hospital__bottom li");
-
         listItems.forEach((listItem, index) => {
             if (index < desktopImages.length) {
-            listItem.style.backgroundImage = `url(${window.innerWidth <= 769 ? mobileImages[index] : desktopImages[index]})`;
+            const newImage = window.innerWidth <= 769 ? mobileImages[index] : desktopImages[index];
+
+            listItem.style.backgroundImage = `url(${newImage})`;
+            listItem.style.backgroundSize = "cover";
+            listItem.style.backgroundPosition = "center";
             }
         });
         }
 
-        // 페이지 로드 및 창 크기 변경 시 실행
-        window.addEventListener("load", updateBackground);
+        // 실행 순서 문제 방지: DOM 로드 후 바로 실행
+        document.addEventListener("DOMContentLoaded", function () {
+        preloadImages();
+        updateBackground();
+        });
+
+        // 창 크기 변경 시 실행
         window.addEventListener("resize", updateBackground);
+    </script>
+
+    <!-- 어썸 아이콘 -->
+    <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
+
+    <!-- 반응형 헤더 -->
+    <script src="./js/move.js"></script>
+
+    <!-- 드롭다운 -->
+    <script src="./js/dropdown.js"></script>
+
+    <!-- 네비게이션 이벤트 -->
+    <script src="./js/navEvent.js"></script>
+
+    <!-- footer -->
+    <script src="./js/footer.js"></script>
+
+    <script src="./js/Responsive.js"></script>
+    <script src="./js/floating.js"></script>
+
+</body>
 
 
-  </script>
+
 </html>
