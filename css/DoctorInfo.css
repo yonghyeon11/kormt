@@ -255,4 +255,13 @@ li a.active {
     }
 }
 
+@media (max-width:391px){
+    .hospitalInfo__img img{
+        height: 300px;
+    }
+}
+
+
+
+
 
