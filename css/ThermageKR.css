@@ -210,7 +210,7 @@ li a.active {
 
     .hospital__bottom ul li{
         width: 90%;
-        height: 180px;
+        height: 220px;
         background-size: 100% 100%;
         /* background-size: contain; */
     }
@@ -244,7 +244,7 @@ li a.active {
 
 @media (max-width:480px){
     .hospital__bottom ul li{
-        height: 130px;
+        height: 120px;
         /* background-size: contain; */
     }
     .hospital__list{
@@ -256,16 +256,51 @@ li a.active {
     }
 }
 
-@media (max-width:401px){
+@media (max-width:460px){
     .hospital__bottom ul li{
-        height: 120px;
+        height: 115px;
         /* background-size: contain; */
     }
 }
 
-@media (max-width:350px){
+@media (max-width:440px){
     .hospital__bottom ul li{
         height: 110px;
+        /* background-size: contain; */
+    }
+}
+
+@media (max-width:420px){
+    .hospital__bottom ul li{
+        height: 105px;
+        /* background-size: contain; */
+    }
+}
+
+@media (max-width:400px){
+    .hospital__bottom ul li{
+        height: 100px;
+        /* background-size: contain; */
+    }
+}
+
+@media (max-width:380px){
+    .hospital__bottom ul li{
+        height: 95px;
+        /* background-size: contain; */
+    }
+}
+
+@media (max-width:360px){
+    .hospital__bottom ul li{
+        height: 90px;
+        /* background-size: contain; */
+    }
+}
+
+@media (max-width:340px){
+    .hospital__bottom ul li{
+        height: 85px;
         /* background-size: contain; */
     }
 }
