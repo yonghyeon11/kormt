@@ -81,7 +81,7 @@
                 </div>
                 <div class="hospital__bottom">
                     <ul>
-                        <li style="background-image: url(/img/plastickThumbnailimg/썸네일_청담쥬넥스피부과의원.jpg);">
+                        <li>
                             <a href="/doctor/plastic/Dr_SungKiSoo.html">
                                 <div class="hospital__list">
                                     <span>청담쥬넥스피부과의원</span>
@@ -89,7 +89,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/plastickThumbnailimg/썸네일_체인지의원.jpg);">
+                        <li>
                             <a href="/doctor/plastic/Dr_JangDooYeol.html">
                                 <div class="hospital__list">
                                     <span>체인지의원</span>
@@ -97,7 +97,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/plastickThumbnailimg/썸네일_엔슬림의원.jpg);">
+                        <li >
                             <a href="/doctor/plastic/Dr_LeeJaeYoung.html">
                                 <div class="hospital__list">
                                     <span>엔슬림의원</span>
@@ -105,7 +105,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/plastickThumbnailimg/썸네일_리디안의원.jpg);">
+                        <li>
                             <a href="/doctor/plastic/Dr_AhnkyongCheon.html">
                                 <div class="hospital__list">
                                     <span>리디안의원</span>
@@ -150,23 +150,81 @@
         <div id="floatingBannerContainer"></div>
         <!-- footer -->
         <div data-include-path="/footerKR.html"></div>
+        
+        <script>
+            function preloadImages() {
+            const images = [
+                "/img/plastickThumbnailimg/썸네일_청담쥬넥스피부과의원.jpg",
+                "/img/plastickThumbnailimg/썸네일_체인지의원.jpg",
+                "/img/plastickThumbnailimg/썸네일_엔슬림의원.jpg",
+                "/img/plastickThumbnailimg/썸네일_리디안의원.jpg",
+                "/img/plastickThumbnailimgM/썸네일_청담쥬넥스피부과의원_m.png",
+                "/img/plastickThumbnailimgM/썸네일_체인지의원_m.png",
+                "/img/plastickThumbnailimgM/썸네일_엔슬림의원_m.png",
+                "/img/plastickThumbnailimgM/썸네일_리디안의원_m.png"
+            ];
+        
+            images.forEach((src) => {
+                const img = new Image();
+                img.src = src;
+            });
+            }
+        
+            function updateBackground() {
+            const listItems = document.querySelectorAll(".hospital__bottom li");
+        
+            const desktopImages = [
+            "/img/plastickThumbnailimg/썸네일_청담쥬넥스피부과의원.jpg",
+                "/img/plastickThumbnailimg/썸네일_체인지의원.jpg",
+                "/img/plastickThumbnailimg/썸네일_엔슬림의원.jpg",
+                "/img/plastickThumbnailimg/썸네일_리디안의원.jpg",
+            ];
+        
+            const mobileImages = [
+            "/img/plastickThumbnailimgM/썸네일_청담쥬넥스피부과의원_m.png",
+                "/img/plastickThumbnailimgM/썸네일_체인지의원_m.png",
+                "/img/plastickThumbnailimgM/썸네일_엔슬림의원_m.png",
+                "/img/plastickThumbnailimgM/썸네일_리디안의원_m.png"
+            ];
+        
+            listItems.forEach((listItem, index) => {
+                if (index < desktopImages.length) {
+                const newImage = window.innerWidth <= 769 ? mobileImages[index] : desktopImages[index];
+        
+                listItem.style.backgroundImage = `url(${newImage})`;
+                listItem.style.backgroundSize = "cover";
+                listItem.style.backgroundPosition = "center";
+                }
+            });
+            }
+        
+            // 실행 순서 문제 방지: DOM 로드 후 바로 실행
+            document.addEventListener("DOMContentLoaded", function () {
+            preloadImages();
+            updateBackground();
+            });
+        
+            // 창 크기 변경 시 실행
+            window.addEventListener("resize", updateBackground);
+        </script>
+        
+        <!-- 어썸 아이콘 -->
+        <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
+        
+        <!-- 반응형 헤더 -->
+        <script src="/js/move.js"></script>
+        
+        <!-- 드롭다운 -->
+        <script src="/js/dropdown.js"></script>
+        
+        <!-- 네비게이션 이벤트 -->
+        <script src="/js/navEvent.js"></script>
+        
+        <!-- footer -->
+        <script src="/js/footer.js"></script>
+        
+        <script src="/js/Responsive.js"></script>
+        
+        <script src="/js/floating.js"></script>
 </body>
-<!-- 어썸 아이콘 -->
-<script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
-
-<!-- 반응형 헤더 -->
-<script src="/js/move.js"></script>
-
-<!-- 드롭다운 -->
-<script src="/js/dropdown.js"></script>
-
-<!-- 네비게이션 이벤트 -->
-<script src="/js/navEvent.js"></script>
-
-<!-- footer -->
-<script src="/js/footer.js"></script>
-
-<script src="/js/Responsive.js"></script>
-
-<script src="/js/floating.js"></script>
 </html>

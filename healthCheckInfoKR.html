@@ -87,35 +87,35 @@
                 </div>
                 <div class="hospital__bottom">
                     <ul>
-                        <li style="background-image: url(/img/healthCheckThum/썸네일_삼성서울병원.jpg);">
+                        <li>
                             <a href="/healthCheckHospital/SamsungSeoul.html">
                                 <div class="hospital__list">
                                     <span>삼성서울병원</span>
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/healthCheckThum/썸네일_서울아산병원.jpg);">
+                        <li>
                             <a href="/healthCheckHospital/SeoulAsan.html">
                                 <div class="hospital__list">
                                     <span>서울아산병원</span>
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/healthCheckThum/썸네일_서울대학교병원.jpg);">
+                        <li>
                             <a href="/healthCheckHospital/SeoulNationalUniversity.html">
                                 <div class="hospital__list">
                                     <span>서울대학교병원</span>
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/healthCheckThum/썸네일_연세대세브란스병원.jpg);">
+                        <li>
                             <a href="/healthCheckHospital/YonseiSeverance.html">
                                 <div class="hospital__list">
                                     <span>연세대세브란스병원</span>
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/healthCheckThum/썸네일_가톨릭대학교가톨릭중앙의료원.jpg);">
+                        <li>
                             <a href="/healthCheckHospital/CatholicUniversity.html">
                                 <div class="hospital__list">
                                     <span>가톨릭대학교 </span>
@@ -123,42 +123,42 @@
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/healthCheckThum/썸네일_강남차병원.jpg);">
+                        <li>
                             <a href="/healthCheckHospital/GangnamCha.html">
                                 <div class="hospital__list">
                                     <span>강남차병원</span>
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/healthCheckThum/썸네일_중앙대학교병원.jpg);">
+                        <li>
                             <a href="/healthCheckHospital/ChungAngUniversity.html">
                                 <div class="hospital__list">
                                     <span>중앙대학교병원</span>
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/healthCheckThum/썸네일_건국대학교병원.jpg);">
+                        <li>
                             <a href="/healthCheckHospital/KonkukUniversity.html">
                                 <div class="hospital__list">
                                     <span>건국대학교병원</span>
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/healthCheckThum/썸네일_가천대길병원.jpg);">
+                        <li>
                             <a href="/healthCheckHospital/GachonUniversity.html">
                                 <div class="hospital__list">
                                     <span>가천대길병원</span>
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/healthCheckThum/썸네일_혜민병원.jpg);">
+                        <li>
                             <a href="/healthCheckHospital/Hyemin.html">
                                 <div class="hospital__list">
                                     <span>혜민병원</span>
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/healthCheckThum/썸네일_한신메디피아.jpg);">
+                        <li>
                             <a href="/healthCheckHospital/HanshinMedipia.html">
                                 <div class="hospital__list">
                                     <span>한신메디피아</span>
@@ -183,22 +183,109 @@
 
     <!-- footer -->
     <div data-include-path="footerKR.html"></div>
+
+    <script>
+        function preloadImages() {
+        const images = [
+            "/img/healthCheckThum/썸네일_삼성서울병원.jpg",
+            "/img/healthCheckThum/썸네일_서울아산병원.jpg",
+            "/img/healthCheckThum/썸네일_서울대학교병원.jpg",
+            "/img/healthCheckThum/썸네일_연세대세브란스병원.jpg",
+            "/img/healthCheckThum/썸네일_가톨릭대학교가톨릭중앙의료원.jpg",
+            "/img/healthCheckThum/썸네일_강남차병원.jpg",
+            "/img/healthCheckThum/썸네일_중앙대학교병원.jpg",
+            "/img/healthCheckThum/썸네일_건국대학교병원.jpg",
+            "/img/healthCheckThum/썸네일_가천대길병원.jpg",
+            "/img/healthCheckThum/썸네일_혜민병원.jpg",
+            "/img/healthCheckThum/썸네일_한신메디피아.jpg",
+            "/img/healthCheckThumM/썸네일_삼성서울병원_M.png",
+            "/img/healthCheckThumM/썸네일_서울아산병원_M.png",
+            "/img/healthCheckThumM/썸네일_서울대학교병원_M.png",
+            "/img/healthCheckThumM/썸네일_연세대세브란스병원_M.png",
+            "/img/healthCheckThumM/썸네일_가톨릭대학교가톨릭중앙의료원_M.png",
+            "/img/healthCheckThumM/썸네일_강남차병원_M.png",
+            "/img/healthCheckThumM/썸네일_중앙대학교병원_M.png",
+            "/img/healthCheckThumM/썸네일_건국대학교병원_M.png",
+            "/img/healthCheckThumM/썸네일_가천대길병원_M.png",
+            "/img/healthCheckThumM/썸네일_혜민병원_M.png",
+            "/img/healthCheckThumM/썸네일_한신메디피아_M.png",
+
+        ];
+    
+        images.forEach((src) => {
+            const img = new Image();
+            img.src = src;
+        });
+        }
+    
+        function updateBackground() {
+        const listItems = document.querySelectorAll(".hospital__bottom li");
+    
+        const desktopImages = [
+        "/img/healthCheckThum/썸네일_삼성서울병원.jpg",
+            "/img/healthCheckThum/썸네일_서울아산병원.jpg",
+            "/img/healthCheckThum/썸네일_서울대학교병원.jpg",
+            "/img/healthCheckThum/썸네일_연세대세브란스병원.jpg",
+            "/img/healthCheckThum/썸네일_가톨릭대학교가톨릭중앙의료원.jpg",
+            "/img/healthCheckThum/썸네일_강남차병원.jpg",
+            "/img/healthCheckThum/썸네일_중앙대학교병원.jpg",
+            "/img/healthCheckThum/썸네일_건국대학교병원.jpg",
+            "/img/healthCheckThum/썸네일_가천대길병원.jpg",
+            "/img/healthCheckThum/썸네일_혜민병원.jpg",
+            "/img/healthCheckThum/썸네일_한신메디피아.jpg",
+        ];
+    
+        const mobileImages = [
+        "/img/healthCheckThumM/썸네일_삼성서울병원_M.png",
+            "/img/healthCheckThumM/썸네일_서울아산병원_M.png",
+            "/img/healthCheckThumM/썸네일_서울대학교병원_M.png",
+            "/img/healthCheckThumM/썸네일_연세대세브란스병원_M.png",
+            "/img/healthCheckThumM/썸네일_가톨릭대학교가톨릭중앙의료원_M.png",
+            "/img/healthCheckThumM/썸네일_강남차병원_M.png",
+            "/img/healthCheckThumM/썸네일_중앙대학교병원_M.png",
+            "/img/healthCheckThumM/썸네일_건국대학교병원_M.png",
+            "/img/healthCheckThumM/썸네일_가천대길병원_M.png",
+            "/img/healthCheckThumM/썸네일_혜민병원_M.png",
+            "/img/healthCheckThumM/썸네일_한신메디피아_M.png",
+        ];
+    
+        listItems.forEach((listItem, index) => {
+            if (index < desktopImages.length) {
+            const newImage = window.innerWidth <= 769 ? mobileImages[index] : desktopImages[index];
+    
+            listItem.style.backgroundImage = `url(${newImage})`;
+            listItem.style.backgroundSize = "cover";
+            listItem.style.backgroundPosition = "center";
+            }
+        });
+        }
+    
+        // 실행 순서 문제 방지: DOM 로드 후 바로 실행
+        document.addEventListener("DOMContentLoaded", function () {
+        preloadImages();
+        updateBackground();
+        });
+    
+        // 창 크기 변경 시 실행
+        window.addEventListener("resize", updateBackground);
+    </script>
+
+    <!-- 어썸 아이콘 -->
+    <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
+    
+    <!-- 반응형 헤더 -->
+    <script src="/js/move.js"></script>
+    
+    <!-- 드롭다운 -->
+    <script src="/js/dropdown.js"></script>
+    
+    <!-- 네비게이션 이벤트 -->
+    <script src="/js/navEvent.js"></script>
+    
+    <!-- footer -->
+    <script src="./js/footer.js"></script>
+    <script src="./js/Responsive.js"></script>
+    
+    <script src="./js/floating.js"></script>
 </body>
-<!-- 어썸 아이콘 -->
-<script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
-
-<!-- 반응형 헤더 -->
-<script src="/js/move.js"></script>
-
-<!-- 드롭다운 -->
-<script src="/js/dropdown.js"></script>
-
-<!-- 네비게이션 이벤트 -->
-<script src="/js/navEvent.js"></script>
-
-<!-- footer -->
-<script src="./js/footer.js"></script>
-<script src="./js/Responsive.js"></script>
-
-<script src="./js/floating.js"></script>
 </html>
