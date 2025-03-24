@@ -235,6 +235,22 @@ li a.active {
         height: 720px;
     }
 
+    .hospitalInfo__bottom{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    .hospitalInfo__bottom ul{
+        margin-left: 0;
+        margin-top: 35px;
+        padding: 20px;
+    }
+
+    .hospitalInfo__bottom ul li h3{
+        text-align: center;
+    }
+
 }
 
 @media (max-width:580px){
