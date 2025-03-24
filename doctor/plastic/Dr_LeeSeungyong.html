@@ -86,7 +86,7 @@
                     </div>
                     <div class="hospitalInfo__midle">
                         <div class="hospitalInfo__img">
-                            <img src="/img/plastickInfo/모건 피부과.jpg" alt="">
+                            <img src="/img/plastickInfo/모건_피부과.jpg" alt="">
                         </div>
                     </div>
                     <div class="hospitalInfo__bottom">
@@ -133,5 +133,26 @@
 <script src="/js/footer.js"></script>
 
 <script src="/js/floating.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const imgElement = document.querySelector(".hospitalInfo__img img");
+        if (!imgElement) return;
+
+        function updateImage() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 768) {
+                imgElement.src = "/img/plastickInfo/모건_피부과_M.jpg";
+            } else if (screenWidth < 1024) {
+                imgElement.src = "/img/plastickInfo/모건_피부과_T.jpg";
+            } else {
+                imgElement.src = "/img/plastickInfo/모건_피부과.jpg";
+            }
+        }
+
+        window.addEventListener("resize", updateImage);
+        updateImage();
+    });
+</script>
 
 </html>

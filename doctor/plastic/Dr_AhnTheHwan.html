@@ -130,4 +130,25 @@
 
 <script src="/js/floating.js"></script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const imgElement = document.querySelector(".hospitalInfo__img img");
+        if (!imgElement) return;
+
+        function updateImage() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 768) {
+                imgElement.src = "/img/plastickInfo/프레쉬이비인후과의원_M.jpg";
+            } else if (screenWidth < 1024) {
+                imgElement.src = "/img/plastickInfo/프레쉬이비인후과의원_T.jpg";
+            } else {
+                imgElement.src = "/img/plastickInfo/프레쉬이비인후과의원.jpg";
+            }
+        }
+
+        window.addEventListener("resize", updateImage);
+        updateImage();
+    });
+</script>
+
 </html>

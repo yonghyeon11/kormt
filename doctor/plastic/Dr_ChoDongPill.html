@@ -100,12 +100,6 @@
                             <li>대한성형외과학회 정회원</li>
                             <li>대한미용성형외과학회 정회원</li>
                             <li>대한두개안면성형외과학회 정회원</li>
-
-                            
-
-
-
-
                         </ul>
                     </div>
                     <button type="button" onclick="location.href='https://www.abps.co.kr/'">병원 홈페이지 바로가기 ></button>
@@ -134,5 +128,26 @@
 <script src="/js/footer.js"></script>
 
 <script src="/js/floating.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const imgElement = document.querySelector(".hospitalInfo__img img");
+        if (!imgElement) return;
+
+        function updateImage() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 768) {
+                imgElement.src = "/img/plastickInfo/에이비성형외과의원_M.jpg";
+            } else if (screenWidth < 1024) {
+                imgElement.src = "/img/plastickInfo/에이비성형외과의원_T.jpg";
+            } else {
+                imgElement.src = "/img/plastickInfo/에이비성형외과의원.jpg";
+            }
+        }
+
+        window.addEventListener("resize", updateImage);
+        updateImage();
+    });
+</script>
 
 </html>
