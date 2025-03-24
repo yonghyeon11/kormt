@@ -130,4 +130,25 @@
 
 <script src="/js/floating.js"></script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const imgElement = document.querySelector(".hospitalInfo__img img");
+        if (!imgElement) return;
+
+        function updateImage() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 768) {
+                imgElement.src = "/img/LaserBotoxFillerInfo/BLS의원_강남_M.png";
+            } else if (screenWidth < 1024) {
+                imgElement.src = "/img/LaserBotoxFillerInfo/BLS의원_강남_T.png";
+            } else {
+                imgElement.src = "/img/LaserBotoxFillerInfo/BLS의원_강남.jpg";
+            }
+        }
+
+        window.addEventListener("resize", updateImage);
+        updateImage();
+    });
+</script>
+
 </html>

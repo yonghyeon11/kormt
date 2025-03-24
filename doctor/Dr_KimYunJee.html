@@ -133,4 +133,25 @@
 
 <script src="/js/floating.js"></script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const imgElement = document.querySelector(".hospitalInfo__img img");
+        if (!imgElement) return;
+
+        function updateImage() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 768) {
+                imgElement.src = "/img/LaserBotoxFillerInfo/아이디피부과_M.png";
+            } else if (screenWidth < 1024) {
+                imgElement.src = "/img/LaserBotoxFillerInfo/아이디피부과_T.png";
+            } else {
+                imgElement.src = "/img/LaserBotoxFillerInfo/아이디피부과.jpg";
+            }
+        }
+
+        window.addEventListener("resize", updateImage);
+        updateImage();
+    });
+</script>
+
 </html>

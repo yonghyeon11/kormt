@@ -115,22 +115,45 @@
         <!-- footer -->
         <div data-include-path="/footerKR.html"></div>
 
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const imgElement = document.querySelector(".hospitalInfo__img img");
+                if (!imgElement) return;
+        
+                function updateImage() {
+                    const screenWidth = window.innerWidth;
+                    if (screenWidth < 768) {
+                        imgElement.src = "/img/LaserBotoxFillerInfo/연세더셀피부과_M.png";
+                    } else if (screenWidth < 1024) {
+                        imgElement.src = "/img/LaserBotoxFillerInfo/연세더셀피부과_T.png";
+                    } else {
+                        imgElement.src = "/img/LaserBotoxFillerInfo/연세더셀피부과.jpg";
+                    }
+                }
+        
+                window.addEventListener("resize", updateImage);
+                updateImage();
+            });
+        </script>
+        <!-- 어썸 아이콘 -->
+        <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
+
+        <!-- 반응형 헤더 -->
+        <script src="/js/move.js"></script>
+
+        <!-- 드롭다운 -->
+        <script src="/js/dropdown.js"></script>
+
+        <!-- 네비게이션 이벤트 -->
+        <script src="/js/navEvent.js"></script>
+
+        <!-- footer -->
+        <script src="/js/footer.js"></script>
+
+        <script src="/js/floating.js"></script>
+
 </body>
-<!-- 어썸 아이콘 -->
-<script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
 
-<!-- 반응형 헤더 -->
-<script src="/js/move.js"></script>
 
-<!-- 드롭다운 -->
-<script src="/js/dropdown.js"></script>
-
-<!-- 네비게이션 이벤트 -->
-<script src="/js/navEvent.js"></script>
-
-<!-- footer -->
-<script src="/js/footer.js"></script>
-
-<script src="/js/floating.js"></script>
 
 </html>
