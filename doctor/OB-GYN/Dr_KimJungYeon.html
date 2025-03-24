@@ -123,4 +123,25 @@
 <script src="/js/footer.js"></script>
 <script src="/js/floating.js"></script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const imgElement = document.querySelector(".hospitalInfo__img img");
+        if (!imgElement) return;
+
+        function updateImage() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 768) {
+                imgElement.src = "/img/AnSanchiInfo/지인산부인과_M.jpg";
+            } else if (screenWidth < 1024) {
+                imgElement.src = "/img/AnSanchiInfo/지인산부인과_T.jpg";
+            } else {
+                imgElement.src = "/img/AnSanchiInfo/지인산부인과.jpg";
+            }
+        }
+
+        window.addEventListener("resize", updateImage);
+        updateImage();
+    });
+</script>
+
 </html>
