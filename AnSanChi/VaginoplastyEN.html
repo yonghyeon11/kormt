@@ -69,12 +69,13 @@
                             <!-- <li class="nav1"><a href="/AnSanChiEN.html">All View</a></li> -->
                             <li class="nav2"><a href="/AnSanChi/ophthalmologyEN.html">LASIK/LASEK</a></li>
                             <li class="nav3"><a href="/AnSanChi/VaginoplastyEN.html">Vaginal rejuvenation</a></li>
+                            <li class="nav4"><a href="/AnSanChi/VaginoplastyEN.html" style="display: none;">Vaginal rejuvenation</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="hospital__bottom">
                     <ul>
-                        <li style="background-image: url(/img/ASCThumEN/썸네일_와이퀸산부인과.jpg);">
+                        <li>
                             <a href="/doctor/OB-GYN-EN/Dr_KimJiYeonEN.html">
                                 <div class="hospital__list">
                                     <span>Y Queen Woman Clinic</span>
@@ -82,7 +83,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/ASCThumEN/썸네일_안산부인과.jpg);">
+                        <li>
                             <a href="/doctor/OB-GYN-EN/Dr_JungRyeolLeeEN.html">
                                 <div class="hospital__list">
                                     <span>Ahn Gynecology</span>
@@ -90,7 +91,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/ASCThumEN/썸네일_바른길산부인과.jpg);">
+                        <li>
                             <a href="/doctor/OB-GYN-EN/Dr_GillKiHyeonEN.html">
                                 <div class="hospital__list">
                                     <span>Barun Gyn</span>
@@ -98,7 +99,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/ASCThumEN/썸네일_헤스티아여성의원신사본점.jpg);">
+                        <li>
                             <a href="/doctor/OB-GYN-EN/Dr_KwonJeongEunEN.html">
                                 <div class="hospital__list">
                                     <span>Hestia Women's Clinic</span>
@@ -106,7 +107,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/ASCThumEN/썸네일_지인산부인과.jpg);">
+                        <li>
                             <a href="/doctor/OB-GYN-EN/Dr_KimJungYeonEN.html">
                                 <div class="hospital__list">
                                     <span>Jiin Clinic</span>
@@ -114,29 +115,15 @@
                                 </div>
                             </a>
                         </li>
-
-                        <li>
-                            <a href="#">
-                                <div class="hospital__list">
-
-                                </div>
-                            </a>
+                        <li class="">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <div class="hospital__list">
-
-                                </div>
-                            </a>
+                        <li class="">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <div class="hospital__list">
-
-                                </div>
-                            </a>
+                        <li class="">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -146,6 +133,67 @@
         <div id="floatingBannerContainer"></div>
 <!-- footer -->
 <div data-include-path="/footerEN.html"></div>
+
+<script>
+    function preloadImages() {
+    const images = [
+        "/img/ASCThumEN/썸네일_와이퀸산부인과.jpg",
+        "/img/ASCThumEN/썸네일_안산부인과.jpg",
+        "/img/ASCThumEN/썸네일_바른길산부인과.jpg",
+        "/img/ASCThumEN/썸네일_헤스티아여성의원신사본점.jpg",
+        "/img/ASCThumEN/썸네일_지인산부인과.jpg",
+        "/img/ASCThumENM/썸네일_와이퀸산부인과_M.png",
+        "/img/ASCThumENM/썸네일_안산부인과_M.png",
+        "/img/ASCThumENM/썸네일_바른길산부인과_M.png",
+        "/img/ASCThumENM/썸네일_헤스티아여성의원_신사본점_M.png",
+        "/img/ASCThumENM/썸네일_지인산부인과_M.png",
+    ];
+
+    images.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+    });
+    }
+
+    function updateBackground() {
+    const listItems = document.querySelectorAll(".hospital__bottom li");
+
+    const desktopImages = [
+    "/img/ASCThumEN/썸네일_와이퀸산부인과.jpg",
+        "/img/ASCThumEN/썸네일_안산부인과.jpg",
+        "/img/ASCThumEN/썸네일_바른길산부인과.jpg",
+        "/img/ASCThumEN/썸네일_헤스티아여성의원신사본점.jpg",
+        "/img/ASCThumEN/썸네일_지인산부인과.jpg",
+    ];
+
+    const mobileImages = [
+    "/img/ASCThumENM/썸네일_와이퀸산부인과_M.png",
+        "/img/ASCThumENM/썸네일_안산부인과_M.png",
+        "/img/ASCThumENM/썸네일_바른길산부인과_M.png",
+        "/img/ASCThumENM/썸네일_헤스티아여성의원_신사본점_M.png",
+        "/img/ASCThumENM/썸네일_지인산부인과_M.png",
+    ];
+
+    listItems.forEach((listItem, index) => {
+        if (index < desktopImages.length) {
+        const newImage = window.innerWidth <= 769 ? mobileImages[index] : desktopImages[index];
+
+        listItem.style.backgroundImage = `url(${newImage})`;
+        listItem.style.backgroundSize = "cover";
+        listItem.style.backgroundPosition = "center";
+        }
+    });
+    }
+
+    // 실행 순서 문제 방지: DOM 로드 후 바로 실행
+    document.addEventListener("DOMContentLoaded", function () {
+    preloadImages();
+    updateBackground();
+    });
+
+    // 창 크기 변경 시 실행
+    window.addEventListener("resize", updateBackground);
+</script>
 </body>
 <!-- 어썸 아이콘 -->
 <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>

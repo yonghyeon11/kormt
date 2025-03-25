@@ -68,12 +68,14 @@
                         <ul>
                             <!-- <li class="nav1"><a href="/AnSanChiEN.html">All View</a></li> -->
                             <li class="nav2" style="text-align: center;"><a href="/AnSanChi/implantEN.html">Implant</a></li>
+                            <li class="nav3"><a href="/AnSanChi/implantKR.html" style="display: none;">임플란트</a></li>
+                            <li class="nav4"><a href="/AnSanChi/implantKR.html" style="display: none;">임플란트</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="hospital__bottom">
                     <ul>
-                        <li style="background-image: url(/img/ASCThumEN/썸네일_미니쉬치과병원.jpg);">
+                        <li>
                             <a href="/doctor/dentistryEN/Dr_KangJeongHo.html">
                                 <div class="hospital__list">
                                     <span>Minish Dental Clinic</span>
@@ -81,54 +83,26 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <div class="hospital__list">
-
-                                </div>
-                            </a>
+                        <li class="">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <div class="hospital__list">
-
-                                </div>
-                            </a>
+                        <li class="">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <div class="hospital__list">
-
-                                </div>
-                            </a>
+                        <li class="">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <div class="hospital__list">
-
-                                </div>
-                            </a>
+                        <li class="">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <div class="hospital__list">
-
-                                </div>
-                            </a>
+                        <li class="">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <div class="hospital__list">
-
-                                </div>
-                            </a>
+                        <li class="">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <div class="hospital__list">
-
-                                </div>
-                            </a>
+                        <li class="">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
                     </ul>
                 </div>
@@ -139,6 +113,54 @@
         <div id="floatingBannerContainer"></div>
 <!-- footer -->
 <div data-include-path="/footerEN.html"></div>
+
+<script>
+    function preloadImages() {
+    const images = [
+        "/img/ASCThumEN/썸네일_미니쉬치과병원.jpg",
+        "/img/ASCThumENM/썸네일_미니쉬치과병원_M.png",
+    ];
+
+    images.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+    });
+    }
+
+    function updateBackground() {
+    const listItems = document.querySelectorAll(".hospital__bottom li");
+
+    const desktopImages = [
+        "/img/ASCThumEN/썸네일_미니쉬치과병원.jpg",
+
+    ];
+
+    const mobileImages = [
+        "/img/ASCThumENM/썸네일_미니쉬치과병원_M.png",
+    ];
+
+    listItems.forEach((listItem, index) => {
+        if (index < desktopImages.length) {
+        const newImage = window.innerWidth <= 769 ? mobileImages[index] : desktopImages[index];
+
+        listItem.style.backgroundImage = `url(${newImage})`;
+        listItem.style.backgroundSize = "cover";
+        listItem.style.backgroundPosition = "center";
+        }
+    });
+    }
+
+    // 실행 순서 문제 방지: DOM 로드 후 바로 실행
+    document.addEventListener("DOMContentLoaded", function () {
+    preloadImages();
+    updateBackground();
+    });
+
+    // 창 크기 변경 시 실행
+    window.addEventListener("resize", updateBackground);
+</script>
+
+
 </body>
 <!-- 어썸 아이콘 -->
 <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
