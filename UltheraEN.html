@@ -85,7 +85,7 @@
                 </div>
                 <div class="hospital__bottom">
                     <ul>
-                        <li style="background-image: url(/img/LaserThumEN/썸네일_V&MJ피부과.jpg);">
+                        <li>
                             <a href="/doctor/dermatologyEN/Dr_KimMinjooEN.html">
                                 <div class="hospital__list">
                                     <span style="font-size: 13px;">V&MJ Dermatology</span>
@@ -93,7 +93,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/LaserThumEN/썸네일_압구정오라클.jpg);">
+                        <li>
                             <a href="/doctor/dermatologyEN/Dr_ParkJaeYoungEN.html">
                                 <div class="hospital__list">
                                     <span style="font-size: 13px;">Oracle Dermatology Apgujeong</span>
@@ -101,7 +101,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/LaserThumEN/썸네일_리더스피부과\ 압구정점.jpg);">
+                        <li>
                             <a href="/doctor/dermatologyEN/Dr_KangSeungHeeEN.html">
                                 <div class="hospital__list">
                                     <span style="font-size: 13px;">Leaders Dermatology Apgujeong Branch</span>
@@ -109,7 +109,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li style="background-image: url(/img/LaserThumEN/썸네일_BLS의원_강남.jpg);">
+                        <li>
                             <a href="/doctor/dermatologyEN/Dr_LeeDongJinEN.html">
                                 <div class="hospital__list">
                                     <span style="font-size: 13px;">BLS Clinic</span>
@@ -117,37 +117,17 @@
                                 </div>
                             </a>
                         </li>
-                        <li >
-                            <a href="#">
-                                <div class="hospital__list">
-<!--                                     <span>닥터스피부과의원 신사본점</span>
-                                    <span>성현철원장</span> -->
-                                </div>
-                            </a>
+                        <li class="">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
-                        <li >
-                            <a href="#">
-                                <div class="hospital__list">
-<!--                                     <span>아이디피부과</span>
-                                    <span>김윤지원장</span> -->
-                                </div>
-                            </a>
+                        <li class="">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
-                        <li >
-                            <a href="#">
-                                <div class="hospital__list">
-<!--                                     <span>바노바기피부과</span>
-                                    <span>ooo원장</span> -->
-                                </div>
-                            </a>
+                        <li class="">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
-                        <li >
-                            <a href="#">
-                                <div class="hospital__list">
-<!--                                     <span>리더스피부과 압구정점</span>
-                                    <span>강승희원장</span> -->
-                                </div>
-                            </a>
+                        <li class="">
+                            <a href="#"><div class="hospital__list"></div></a>
                         </li>
                     </ul>
                 </div>
@@ -158,6 +138,63 @@
         <div id="floatingBannerContainer"></div>
     <!-- footer -->
     <div data-include-path="footerEN.html"></div>
+
+    <script>
+        function preloadImages() {
+        const images = [
+            "/img/LaserThumEN/썸네일_V&MJ피부과.jpg",
+            "/img/LaserThumEN/썸네일_압구정오라클.jpg",
+            "/img/LaserThumEN/썸네일_리더스피부과_압구정점.jpg",
+            "/img/LaserThumEN/썸네일_BLS의원_강남.jpg",
+            "/img/LaserBotoxFillerENM/썸네일_V&MJ피부과.png",
+            "/img/LaserBotoxFillerENM/썸네일_압구정오라클.png",
+            "/img/LaserBotoxFillerENM/썸네일_리더스피부과_압구정점.png",
+            "/img/LaserBotoxFillerENM/썸네일_BLS의원_강남.png"
+        ];
+    
+        images.forEach((src) => {
+            const img = new Image();
+            img.src = src;
+        });
+        }
+    
+        function updateBackground() {
+        const listItems = document.querySelectorAll(".hospital__bottom li");
+    
+        const desktopImages = [
+            "/img/LaserThumEN/썸네일_V&MJ피부과.png",
+            "/img/LaserThumEN/썸네일_압구정오라클.jpg",
+            "/img/LaserThumEN/썸네일_리더스피부과_압구정점.jpg",
+            "/img/LaserThumEN/썸네일_BLS의원_강남.jpg",
+        ];
+    
+        const mobileImages = [
+        "/img/LaserBotoxFillerENM/썸네일_V&MJ피부과.png",
+            "/img/LaserBotoxFillerENM/썸네일_압구정오라클.png",
+            "/img/LaserBotoxFillerENM/썸네일_리더스피부과_압구정점.png",
+            "/img/LaserBotoxFillerENM/썸네일_BLS의원_강남.png"
+        ];
+    
+        listItems.forEach((listItem, index) => {
+            if (index < desktopImages.length) {
+            const newImage = window.innerWidth <= 769 ? mobileImages[index] : desktopImages[index];
+    
+            listItem.style.backgroundImage = `url(${newImage})`;
+            listItem.style.backgroundSize = "cover";
+            listItem.style.backgroundPosition = "center";
+            }
+        });
+        }
+    
+        // 실행 순서 문제 방지: DOM 로드 후 바로 실행
+        document.addEventListener("DOMContentLoaded", function () {
+        preloadImages();
+        updateBackground();
+        });
+    
+        // 창 크기 변경 시 실행
+        window.addEventListener("resize", updateBackground);
+    </script>
 </body>
 <!-- 어썸 아이콘 -->
 <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
