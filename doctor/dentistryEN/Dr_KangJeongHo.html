@@ -69,8 +69,8 @@
                         <ul>
                             <!-- <li class="nav1"><a href="/AnSanChiEN.html">All View</a></li> -->
                             <li class="nav2" style="text-align: center;"><a href="/AnSanChi/implantEN.html" style="color: #2442b3; border-bottom: 2px solid #2442b3;">Implant</a></li>
-
-
+                            <li class="nav3"><a style="display: none;"></a></li>
+                            <li class="nav4"><a style="display: none;"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -117,5 +117,27 @@
 <!-- footer -->
 <script src="/js/footer.js"></script>
 <script src="/js/floatingEN.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const imgElement = document.querySelector(".hospitalInfo__img img");
+        if (!imgElement) return;
+
+        function updateImage() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 768) {
+                imgElement.src = "/img/AnSanchiEN/미니쉬치과병원_M_치과.jpg";
+            } else if (screenWidth < 1024) {
+                imgElement.src = "/img/AnSanchiEN/미니쉬치과병원_M_치과.jpg";
+            } else {
+                imgElement.src = "/img/AnSanchiEN/미니쉬치과병원.jpg";
+            }
+        }
+
+        window.addEventListener("resize", updateImage);
+        updateImage();
+    });
+</script>
+
 
 </html>
