@@ -69,6 +69,8 @@
                         <ul>
                             <!-- <li class="nav1"><a href="/healthCheckEN.html">All View</a></li> -->
                             <li class="nav2" style="font-size: 10px;"><a href="/healthCheckInfoEN.html" style="color: #2442b3; border-bottom: 2px solid #2442b3;">Comprehensive health Check-up </a></li>
+                            <li class="nav3" style="font-size: 10px;"><a style="display: none;"></a></li>
+                            <li class="nav4" style="font-size: 10px;"><a style="display: none;"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -122,4 +124,25 @@
 
 <script src="/js/Responsive.js"></script>
 <script src="/js/floatingEN.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const imgElement = document.querySelector(".hospitalInfo__img img");
+        if (!imgElement) return;
+
+        function updateImage() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 768) {
+                imgElement.src = "/img/healthCheckEN/가톨릭대학교가톨릭중앙의료원_M_검진.jpg";
+            } else if (screenWidth < 1024) {
+                imgElement.src = "/img/healthCheckEN/가톨릭대학교가톨릭중앙의료원_T_검진.jpg";
+            } else {
+                imgElement.src = "/img/healthCheckEN/가톨릭대학교가톨릭중앙의료원.jpg";
+            }
+        }
+
+        window.addEventListener("resize", updateImage);
+        updateImage();
+    });
+</script>
 </html>
