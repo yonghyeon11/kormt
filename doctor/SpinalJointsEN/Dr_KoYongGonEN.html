@@ -69,7 +69,8 @@
                         <ul>
                             <!-- <li class="nav1"><a href="/SpinalJointsEN.html">View All</a></li> -->
                             <li class="nav2"><a href="/SpinalJoints/VertebraeEN.html" >Spine surgery</a></li>
-                            <li class="nav3" style="font-size: 14px;"><a href="/SpinalJoints/JointEN.html" style="color: #2442b3; border-bottom: 2px solid #2442b3;">Shoulder joint surgery</a></li>
+                            <li class="nav3" style="font-size: 11px;"><a href="/SpinalJoints/JointEN.html" style="color: #2442b3; border-bottom: 2px solid #2442b3;">Shoulder joint surgery</a></li>
+                            <li class="nav4"><a style="display: none;"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -118,4 +119,25 @@
 <!-- footer -->
 <script src="/js/footer.js"></script>
 <script src="/js/floatingEN.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const imgElement = document.querySelector(".hospitalInfo__img img");
+        if (!imgElement) return;
+
+        function updateImage() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 768) {
+                imgElement.src = "/img/SpinalJointsEN/연세사랑병원_M_척추.jpg";
+            } else if (screenWidth < 1024) {
+                imgElement.src = "/img/SpinalJointsEN/연세사랑병원_T_척추.jpg";
+            } else {
+                imgElement.src = "/img/SpinalJointsEN/연세사랑병원.jpg";
+            }
+        }
+
+        window.addEventListener("resize", updateImage);
+        updateImage();
+    });
+</script>
 </html>
