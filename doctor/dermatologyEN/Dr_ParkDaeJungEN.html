@@ -79,6 +79,7 @@
                             <li class="nav10"><a href="/FillerEN.html" >Filler </a></li>
                             <li class="nav11"><a href="/RejuranEN.html">Rejuran</a></li>
                             <li class="nav12"><a href="/JuvelookEN.html">Juvelook</a></li>
+                            <li class="nav13"><a style="display: none;"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -126,4 +127,26 @@
 <script src="/js/footer.js"></script>
 
 <script src="/js/floatingEN.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const imgElement = document.querySelector(".hospitalInfo__img img");
+        if (!imgElement) return;
+
+        function updateImage() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 768) {
+                imgElement.src = "/img/LaserBotoxFillerEN/톡스앤필_강남본점_M_레이저.jpg";
+            } else if (screenWidth < 1024) {
+                imgElement.src = "/img/LaserBotoxFillerEN/톡스앤필_강남본점_T_레이저.jpg";
+            } else {
+                imgElement.src = "/img/LaserBotoxFillerEN/톡스앤필_강남본점.jpg";
+            }
+        }
+
+        window.addEventListener("resize", updateImage);
+        updateImage();
+    });
+</script>
+
 </html>
