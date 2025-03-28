@@ -71,10 +71,12 @@
                             <li class="nav2"><a href="/plastic/eyesEN.html">Eyes</a></li>
                             <li class="nav3"><a href="/plastic/noseEN.html" >Nose </a></li>
                             <li class="nav4"><a href="/plastic/liftingEN.html">Facial Lifting</a></li>
-                            <li class="nav5"><a href="/plastic/breastEN.html">Breast Augmentation</a></li>
+                            <li class="nav5" style="font-size: 12px;"><a href="/plastic/breastEN.html">Breast Augmentation</a></li>
                             <li class="nav6"><a href="/plastic/liposuctionEN.html" >Liposuction</a></li>
-                            <li class="nav7"><a href="/plastic/contourEN.html" style="color: #2442b3; border-bottom: 2px solid #2442b3;">Contouring surgery</a></li>
+                            <li class="nav7" style="font-size: 12px;"><a href="/plastic/contourEN.html" style="color: #2442b3; border-bottom: 2px solid #2442b3;">Contouring surgery</a></li>
                             <li class="nav8"><a href="/plastic/hairTransplantEN.html">Hair transplant</a></li>
+                            <li class="nav9"><a style="display: none;"></a></li>
+                            <li class="nav10"><a style="display: none;"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -135,4 +137,25 @@
 <!-- footer -->
 <script src="/js/footer.js"></script>
 <script src="/js/floatingEN.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const imgElement = document.querySelector(".hospitalInfo__img img");
+        if (!imgElement) return;
+
+        function updateImage() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 768) {
+                imgElement.src = "/img/plastickEN/에이비성형외과의원_M_성형.jpg";
+            } else if (screenWidth < 1024) {
+                imgElement.src = "/img/plastickEN/에이비성형외과의원_T_성형.jpg";
+            } else {
+                imgElement.src = "/img/plastickEN/에이비성형외과의원.jpg";
+            }
+        }
+
+        window.addEventListener("resize", updateImage);
+        updateImage();
+    });
+</script>
 </html>
