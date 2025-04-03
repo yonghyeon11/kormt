@@ -14,3 +14,86 @@ fetch("/floating-bannerKR.html")
 });
 
 
+
+
+/* document.addEventListener("DOMContentLoaded", function () {
+    function updateImages() {
+        const isMobile = window.innerWidth <= 768; // 현재 화면 너비 확인
+
+        // 이미지 요소 가져오기
+        const whatsappImg = document.querySelector(".floating-container img");
+        const arrowImg = document.querySelector(".floating-button img");
+
+        if (whatsappImg) {
+            whatsappImg.src = isMobile 
+                ? "/img/floating/전화_pc_03.png" 
+                : "/img/floating/전화_pc_02.png";
+        }
+
+        if (arrowImg) {
+            arrowImg.src = isMobile 
+                ? "/img/floating/화살표_m.png" 
+                : "/img/floating/화살표_pc.png";
+        }
+    }
+
+    // 초기 로드 시 실행 (화면 크기 확인 후 이미지 변경)
+    updateImages();
+
+    // 화면 크기 변경 시 실행
+    window.addEventListener("resize", updateImages);
+}); */
+
+/* document.addEventListener("DOMContentLoaded", function () {
+    const isMobile = window.innerWidth <= 768; // 현재 화면 너비 확인
+
+    // 이미지 요소 가져오기
+    const whatsappImg = document.querySelector(".floating-container img");
+    const arrowImg = document.querySelector(".floating-button img");
+
+    if (whatsappImg) {
+        whatsappImg.src = isMobile 
+            ? "/img/floating/전화_pc_03.png" 
+            : "/img/floating/전화_pc_02.png";
+    }
+
+    if (arrowImg) {
+        arrowImg.src = isMobile 
+            ? "/img/floating/화살표_m.png" 
+            : "/img/floating/화살표_pc.png";
+    }
+}); */
+
+ document.addEventListener("DOMContentLoaded", function () {
+    function updateImages() {
+        const isMobile = window.innerWidth <= 768; // 현재 화면 너비 확인
+
+        // 이미지 요소 가져오기
+        const whatsappImg = document.querySelector(".floating-container img");
+        const arrowImg = document.querySelector(".floating-button img");
+
+        if (whatsappImg && whatsappImg.dataset.original !== isMobile.toString()) {
+            whatsappImg.src = isMobile 
+                ? "/img/floating/전화_pc_03.png" 
+                : "/img/floating/전화_pc_02.png";
+            whatsappImg.dataset.original = isMobile.toString(); // 변경 상태 저장
+        }
+
+        if (arrowImg && arrowImg.dataset.original !== isMobile.toString()) {
+            arrowImg.src = isMobile 
+                ? "/img/floating/화살표_m.png" 
+                : "/img/floating/화살표_pc.png";
+            arrowImg.dataset.original = isMobile.toString(); // 변경 상태 저장
+        }
+    }
+
+    // ✅ 초기 실행 (최초 로드시에도 체크)
+    updateImages();
+
+    // ✅ 화면 크기 변경 시 다시 실행 (성능 최적화)
+    window.addEventListener("resize", function () {
+        requestAnimationFrame(updateImages);
+    });
+});
+
+

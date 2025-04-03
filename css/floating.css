@@ -5,7 +5,7 @@
     right: 20px;
     transform: translateY(-50%);
     width: 85px;
-    background-color: rgba(255, 255, 255, 0.9);
+
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px;
@@ -27,8 +27,9 @@
     font-weight: bold;
     overflow: hidden;
     flex-direction: column;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #ececff;
     cursor: pointer;
+    
 }
 
 .floating-container img {
@@ -41,7 +42,7 @@
 
 .floating-container p{
     color: #656565;
-    margin-top: 5px;
+
 }
 
 .floating-container:hover p{
@@ -74,7 +75,7 @@
 
 .Consultation__inquiry{
     width: 100%;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #ececff;
 }
 
 .Consultation__inquiry p{
@@ -89,16 +90,16 @@
         top: 95%;
         transform: translateY(-50%);
         width: 100%;
-        background-color: #ffffff;
         text-align: center;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         z-index: 10;
         flex-direction: row;
         right: 0;
         padding: 0;
         border-radius: 0;
+        background: linear-gradient(to bottom, #002080, #000a40); /* 위쪽에서 아래쪽으로 그라데이션 */
     }
 
     .floating-container{
@@ -118,14 +119,13 @@
 
     .floating-button{
     margin-top: 10px;
-    width: 15%;
+    width: 55%;
     height: 100%;
     background-color: inherit;
     color: #656565;
     border: none;
     cursor: pointer;
     font-size: 18px;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,8 +134,38 @@
     }
 
     .Consultation__inquiry{
-        display: none;
+        border-bottom: none;
+        width: 70%;
     }
+
+    .floating-container a{
+        display: flex;
+        align-items: center;
+    }
+
+    .floating-container p {
+        margin-left: 5px;
+        color: #ffffff;
+    }
+
+
+
+    .Consultation__inquiry p{
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .floating-button{
+        color: #ffffff;
+    }
+
+    .separator {
+        height: 20px; /* 세로선 길이 */
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.5); /* 연한 흰색 테두리 */
+        margin: 0 10px;
+    }
+    
 
 
 }

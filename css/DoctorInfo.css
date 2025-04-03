@@ -232,7 +232,7 @@ li a.active {
     }
 
     .hospitalInfo__img img{
-        height: 720px;
+        height: 480px;
     }
 
     .hospitalInfo__bottom{
@@ -245,6 +245,8 @@ li a.active {
         margin-left: 0;
         margin-top: 35px;
         padding: 20px;
+        width: 100%;
+        text-align: left;
     }
 
     .hospitalInfo__bottom ul li h3{
@@ -277,11 +279,19 @@ li a.active {
     .hospitalInfo__img img{
         height: 400px;
     }
+
+    .doctor__img img{
+        height: 330px;
+    }
 }
 
 @media (max-width:391px){
     .hospitalInfo__img img{
-        height: 350px;
+        height: 265px;
+    }
+
+    .doctor__img img{
+        height: 250px;
     }
 }
 

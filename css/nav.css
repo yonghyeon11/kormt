@@ -112,10 +112,16 @@
 }
 
 @media screen and (max-width: 768px) {
-    .navbar {
+/*     .navbar {
         flex-direction: column;
         align-items: flex-start;
         padding: 8px 24px;
+    } */
+
+    .navbar {
+        position: relative;
+        flex-direction: column;
+        align-items: center; /* 기존 flex-start에서 변경 */
     }
     .navbar__menu {
         display: none;
@@ -132,8 +138,16 @@
         justify-content: center;
         width: 100%;
     }
+/*     .navbar__toggleBtn {
+        display: block;
+    } */
+
     .navbar__toggleBtn {
         display: block;
+        position: absolute;
+        top: 10px; /* 버튼이 내려오지 않도록 고정 */
+        right: 32px;
+        z-index: 100; /* 다른 요소 위에 표시되도록 설정 */
     }
 
     .navbar__menu.active,

@@ -95,20 +95,15 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-
-    font-size: 18px;
+    font-size: 21px;
 
 }
 
 .subjects__bottom span{
     color: #ffffff;
-    margin-top: 90px;
     font-weight: bold;
 }
 
-.subjects__bottom .divider2{
-    margin-top: 90px;
-}
 
 .section__top p{
     margin-top: 10px;
