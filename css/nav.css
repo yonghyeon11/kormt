@@ -145,7 +145,7 @@
     .navbar__toggleBtn {
         display: block;
         position: absolute;
-        top: 10px; /* 버튼이 내려오지 않도록 고정 */
+        top: 5px; /* 버튼이 내려오지 않도록 고정 */
         right: 32px;
         z-index: 100; /* 다른 요소 위에 표시되도록 설정 */
     }
@@ -164,6 +164,7 @@
 
     .navbar__logo{
         text-align: left;
+        margin-right: 40%;
     }
 
     .navbar__logo img{
