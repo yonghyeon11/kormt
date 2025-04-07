@@ -96,7 +96,6 @@
     justify-content: center;
     height: 100%;
     font-size: 21px;
-
 }
 
 .subjects__bottom span{
@@ -110,25 +109,21 @@
 }
 
 
-
-
 .subjects__bottom__EN{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 .subjects__bottom__EN span{
     color: #ffffff;
-    margin-top: 90px;
 }
 
 .subjects__bottom__EN .divider2{
-    margin-top: 90px;
+
 }
 
 
