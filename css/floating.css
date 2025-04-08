@@ -84,6 +84,29 @@
     color: #656565;
 }
 
+
+/* 기본 스타일 */
+.floating-button .arrow-img {
+    display: inline-block;
+    width: 24px; height: 24px;
+    background-image: url("/img/floating/화살표_pc.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+  
+
+/*   @media (max-width: 767px) {
+    .floating-button:hover .arrow-img {
+      background-image: url("/img/floating/화살표_m.png");
+    }
+  
+
+    .floating-button:active .arrow-img {
+      background-image: url("/img/floating/화살표_m.png");
+    }
+  } */
+
 @media screen and (max-width: 768px) {
     .floating-banner{
         position: fixed;
