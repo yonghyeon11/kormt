@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
  */
 
-document.addEventListener("DOMContentLoaded", () => {
+/* document.addEventListener("DOMContentLoaded", () => {
     fetch("/floating-bannerEN.html")
         .then(res => res.text())
         .then(html => {
@@ -122,6 +122,54 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // 초기 실행 및 반응형 대응
+    updateImages();
+    window.addEventListener("resize", updateImages);
+}); */
+
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("/floating-bannerEN.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("floatingBannerContainer").innerHTML = html;
+            document.getElementById("scrollToTop")?.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+            updateImages(); // 배너 로드 후 이미지 업데이트
+        });
+
+    const updateImages = () => {
+        const isMobile = window.innerWidth <= 768;
+        const images = [
+            {
+                selector: '.floating-container a[href="http://pf.kakao.com/_IExdwn/chat"] img',
+                mobile: "/img/floating/카톡상담_pc_03.png",
+                pc: "/img/floating/카톡상담_pc_02.png"
+            },
+            {
+                selector: '.floating-container a[href="https://wa.me/message/P7TEF3GFZ7NDG1"] img',
+                mobile: "/img/floating/전화_pc_03.png",
+                pc: "/img/floating/전화_pc_02.png"
+            },
+            {
+                selector: ".floating-button .arrow-img",
+                mobile: "/img/floating/화살표_m.png",
+                pc: "/img/floating/화살표_pc.png"
+            }
+        ];
+
+        images.forEach(({ selector, mobile, pc }) => {
+            const img = document.querySelector(selector);
+            if (img && img.tagName === 'IMG') {
+                const newSrc = isMobile ? mobile : pc;
+                if (img.src !== window.location.origin + newSrc) img.src = newSrc;
+            } else if (img && img.tagName !== 'IMG') {
+                // arrow-img는 배경 이미지로 처리되어 있을 경우
+                const newSrc = `url('${isMobile ? mobile : pc}')`;
+                img.style.backgroundImage = newSrc;
+            }
+        });
+    };
+
     updateImages();
     window.addEventListener("resize", updateImages);
 });

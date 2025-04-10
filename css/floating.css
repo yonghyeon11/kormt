@@ -36,7 +36,11 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-.floating-container:hover img {
+.floating-container:nth-child(3):hover img {
+    content: url("/img/floating/카톡상담_pc_01.png");
+}
+
+.floating-container:nth-child(4):hover img {
     content: url("/img/floating/전화_pc_01.png");
 }
 
@@ -173,11 +177,16 @@
 
 
 
-    .Consultation__inquiry p{
+/*     .Consultation__inquiry p{
         font-size: 20px;
         color: #ffffff;
+        display: none;
     }
+ */
 
+    .Consultation__inquiry {
+        display: none;
+    }
     .floating-button{
         color: #ffffff;
     }
@@ -187,8 +196,7 @@
         width: 1px;
         background-color: rgba(255, 255, 255, 0.5); /* 연한 흰색 테두리 */
         margin: 0 10px;
+        display: none;
     }
     
-
-
 }
