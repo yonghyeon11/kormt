@@ -6,6 +6,10 @@
     text-align: left;
 }
 
+.hospital-area h2{
+    margin-left: 4%;
+}
+
 .hospital-container{
     width: 100%; 
     text-align: center; 
@@ -87,7 +91,7 @@
 
 
 .nav-cont{
-    
+    margin-left: 4%;
 }
 
 .nav-cont ul{
@@ -97,8 +101,8 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-    'a b c d e f g'
-    'a h i j k l m';
+    'b c d e f g'
+    'h i j k l m';
 }
 
 .nav-cont li{
