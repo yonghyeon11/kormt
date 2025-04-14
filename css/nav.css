@@ -32,7 +32,7 @@
     position: absolute; 
     left: 50%; 
     width: 0; 
-    border-bottom: 2px solid #2442b3; 
+    border-bottom: 2px solid #07c21f; 
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
@@ -212,7 +212,7 @@
     display: none;
     margin-top: 7px;
     width: 118px;
-    background: linear-gradient(to bottom, #4a66ff, #b636cd);
+    background: linear-gradient(to bottom, #abfab5, #0cd386);
     border-radius: 5%;
     box-shadow: 4px 4px 10px #c5b0b0;
     animation: fade-in 1s ease;
@@ -227,6 +227,7 @@
     text-decoration: none;
     display: block;
     font-size: 16px;
+    font-weight: bold;
 }
 
 .drop_icon2 {

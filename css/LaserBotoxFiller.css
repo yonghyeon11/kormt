@@ -113,8 +113,8 @@
 }
 
 li a.active {
-    color: #2442b3;
-    border-bottom: 2px solid #2442b3;
+    color: #07c21f;
+    border-bottom: 2px solid #07c21f;
 }
 
 
@@ -251,7 +251,7 @@ li a.active {
     }
 
     .nav-cont ul li a.active {
-        color: #2442b3;
+        color: #07c21f;
         font-weight: bold;
     }
 

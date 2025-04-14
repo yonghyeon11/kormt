@@ -50,7 +50,7 @@
 }
 
 .floating-container:hover p{
-    color: #2442b3;
+    color: #07c21f;
 }
 /* 위로 가기 버튼 */
 .floating-button {
@@ -70,7 +70,7 @@
     font-weight: bold;
 }
 .floating-button:hover {
-    color: #2442b3;
+    color: #07c21f;
 }
 
 .floating-button span{
