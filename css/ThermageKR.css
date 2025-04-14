@@ -82,7 +82,7 @@
 
 .hospital__list span{
     width: 100%;
-    color: #111111;
+    color: #ffffff;
 }
 
 .hospital__list span:nth-child(1){
@@ -177,6 +177,11 @@ li a.active {
 }
 
 @media (max-width:768px){
+
+    .nav-cont{
+        margin-left: 0;
+    }
+
     .nav-cont ul{
         text-align: center;
     }
@@ -199,7 +204,7 @@ li a.active {
     }
 
     .nav-cont ul li a.active {
-        color: #2442b3;
+        color: #07c21f;
         font-weight: bold;
     }
 

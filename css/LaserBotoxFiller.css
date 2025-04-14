@@ -233,6 +233,12 @@ li a.active {
  */
 
  @media (max-width:768px){
+
+
+    .nav-cont{
+        margin-left: 0;
+    }
+
     .nav-cont ul{
         text-align: center;
     }

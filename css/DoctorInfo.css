@@ -129,8 +129,8 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-    'a b c d e f g'
-    'a h i j k l m';
+    'b c d e f g'
+    'h i j k l m';
 }
 
 .nav-cont li{
