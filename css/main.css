@@ -114,7 +114,8 @@
 
 
 .subjects__bottom__EN{
-    display: flex;
+    /* display: flex; */
+    display: none;
     align-items: center;
     justify-content: center;
     height: 100%;
