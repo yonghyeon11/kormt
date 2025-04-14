@@ -55,6 +55,30 @@
     cursor: pointer;
 }
 
+.section__bottom .en__thum li:nth-child(1){
+    background-image: url(/img/피부과_영문.png);
+}
+
+.section__bottom .en__thum li:nth-child(2){
+    background-image: url(/img/성형_영문.png);
+}
+
+.section__bottom .en__thum li:nth-child(3){
+    background-image: url(/img/건강검진_영문.png);
+}
+
+.section__bottom .en__thum li:nth-child(4){
+    background-image: url(/img/안과_산부인과_영문.png);
+}
+
+.section__bottom .en__thum li:nth-child(5){
+    background-image: url(/img/척추_영문.png);
+}
+
+.section__bottom .en__thum li:nth-child(6){
+    background-image: url(/img/치과_영문.png);
+}
+
 /*메인 이미지 순서대로*/
 .section__bottom li:nth-child(1){
     background-image: url(/img/01.png);

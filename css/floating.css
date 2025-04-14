@@ -126,7 +126,8 @@
         right: 0;
         padding: 0;
         border-radius: 0;
-        background: linear-gradient(to bottom, #07c21f, #00798f); /* 위쪽에서 아래쪽으로 그라데이션 */
+        background: #259d64;
+        /* background: linear-gradient(to bottom, #07c21f, #00798f); */ /* 위쪽에서 아래쪽으로 그라데이션 */
     }
 
     .floating-container{
@@ -141,7 +142,7 @@
         flex-direction: column;
         border-bottom: none;
         cursor: pointer;
-        border-right: 1px solid gray;
+        border-right: 1px solid #ffffff;
     }
 
     .floating-button{
