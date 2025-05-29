@@ -29,7 +29,6 @@
     flex-direction: column;
     border-bottom: 1px solid #ececff;
     cursor: pointer;
-    
 }
 
 .floating-container img {
@@ -132,7 +131,7 @@
 
     .floating-container{
         width: 85%;
-        height: 80px;
+        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;

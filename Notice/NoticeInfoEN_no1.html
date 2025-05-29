@@ -3,38 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/notice.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/notice.css">
     <link rel="icon" href="/img/favicon.ico">
     <title>KOREA MEDI TOUR</title>
 
-    <script src="./js/floating.js"></script>
+    <script src="/js/floatingEN.js"></script>
+
+    
+
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar__container">
             <div class="navbar__logo">
-                <a href="/"><img src="/img/logo.png" alt=""></a>
-            </div>
+                <a href="/indexEN.html"><img src="/img/logo.png" alt=""></a>
+            </div> 
             <ul class="navbar__menu">
-                <li class="dropdown"><a href="/index.html">협력 병원</a>
+                <li class="dropdown"><a href="/index.html">Affiliated Hospital</a>
                     <ul class="dropdown__menu">
-                        <li><a href="/ThermageKR.html">레이저 | 보톡스 | 필러</a></li>
-                        <li><a href="/plastic/eyesKR.html">성형외과</a></li>
-                        <li><a href="/healthCheckInfoKR.html">건강검진 | 암치료</a></li>
-                        <li><a href="/AnSanChi/ophthalmologyKR.html">안과 | 산부인과</a></li>
-                        <li><a href="/SpinalJoints/VertebraeKR.html">척추 | 관절</a></li>
-                        <li><a href="/AnSanChi/implantKR.html">치과</a></li>
+                        <li><a href="/ThermageEN.html">Laser | Botox | Filler</a></li>
+                        <li><a href="/plastic/eyesEN.html">Plastic Surgery</a></li>
+                        <li><a href="/healthCheckInfoEN.html" style="font-size: 13px;">Health Check-up | Cancer treatment</a></li>
+                        <li><a href="/AnSanChi/ophthalmologyEN.html" style="font-size: 13px;">Ophthalmology | OB/GYN</a></li>
+                        <li><a href="/SpinalJoints/VertebraeEN.html">Spine | Joint</a></li>
+                        <li><a href="/AnSanChi/implantEN.html">Dentistry</a></li>
                     </ul>
                 </li>
-                <li><a href="/CompanyInfoKR.html">회사소개</a></li>
-                <li class="dropdown"><a href="#">게시판</a>
+                <li><a href="/CompanyInfoEN.html">Company Introduction</a></li>
+                <li class="dropdown"><a href="#">Notice Board</a>
                     <ul class="dropdown__menu">
-                        <li><a href="">공지사항</a></li>
-                        <li><a href="">News</a></li>
+                        <li><a href="/NoticeEN.html">Notice</a></li>
+                        <li><a href="/NewsEN.html">News</a></li>
                     </ul>
                 </li>
             </ul>
@@ -53,8 +56,8 @@
                         </div>
                         <!-- 드롭다운 시 보여질 태그 -->
                         <div class="dropdown_content">
-                            <a href="/index.html"><div>KOREAN</div></a>
-                            <a href="/indexEN.html"><div>ENGLISH</div></a>
+                            <a href="/Notice/NoticeInfoKR_no1.html"><div>KOREAN</div></a>
+                            <a href="/Notice/NoticeInfoEN_no1.html"><div>ENGLISH</div></a>
                         </div>
                     </div>
                 </li>
@@ -65,37 +68,49 @@
     <div id="wrap">
         <section id="section1">
             <div class="section-container">
-                <h2>공지사항</h2>
+                <h2>Notice</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th>번호</th>
-                            <th>공지사항2</th>
-                            <th>작성일</th>
+                            <th>No.1</th>
+                            <th>Introduction to Korea Medical Tour</th>
+                            <th>2025-05-29</th>
                         </tr>
                     </thead>
                     <tbody id="board">
-                        <tr class="fixed">
-                            <td>1</td>
-                            <td style="height: 600px;">
-                                내용
-                            </td>
-                            <td>2025-02-24</td>
-                        </tr>
-                    </tbody>
+                            <tr class="fixed">
+                                <td colspan="3" style="height: 300px; padding: 0;">
+                                    <div style="
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        height: 100%;
+                                        text-align: center;
+                                        flex-direction: column;
+                                        
+                                    ">
+                                    <strong>Introduction to Korea Medical Tour</strong><br><br>
+                                    Korea Medical Tour carefully selects top medical professionals in each field in Korea<br>
+                                    to provide information for patients seeking medical tourism services.<br><br>
+                                    We are committed to offering high-quality services to those interested in medical tourism in Korea.
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
                 </table>
+                <button class="list__btn" onclick="location.href='/NoticeEN.html'" style="cursor: pointer;">List</button>
                 <div class="pagination" id="pagination"></div>
             </div>
             <div class="bottom__img">
-                <img src="/img/CompanyInfo/2502_의료관광홈페이지_소개배너.jpg" alt="">
+                <img src="/img/CompanyInfo/2502_의료관광홈페이지_소개배너 영문.jpg" alt="">
             </div>
         </section>
     </div>
-
         <!--플로팅 베너-->
         <div id="floatingBannerContainer"></div>
     <!-- footer -->
-    <div data-include-path="footerKR.html"></div>
+    <div data-include-path="../footerEN.html"></div>
 </body>
 <script>
     let posts = JSON.parse(localStorage.getItem('posts')) || [];
@@ -160,20 +175,20 @@
 <script>
 
 </script>
-
 <!-- 어썸 아이콘 -->
 <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
 
 <!-- 반응형 헤더 -->
-<script src="./js/move.js"></script>
+<script src="../js/move.js"></script>
 
 <!-- 드롭다운 -->
-<script src="./js/dropdown.js"></script>
+<script src="../js/dropdown.js"></script>
 
 <!-- footer -->
-<script src="./js/footer.js"></script>
+<script src="../js/footer.js"></script>
 
-<script src="./js/Responsive.js"></script>
+
+<script src="../js/Responsive.js"></script>
 
 
 
