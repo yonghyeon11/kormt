@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/DoctorInfo.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/DoctorInfo.css">
     <link rel="icon" href="/img/favicon.ico">
     <title>KOREA MEDI TOUR</title>
 </head>
@@ -51,8 +51,8 @@
                     
                         <!-- 드롭다운 시 보여질 태그 -->
                         <div class="dropdown_content">
-                            <a href="/healthCheckHospital/CatholicUniversity.html"><div>KOREAN</div></a>
-                            <a href="/healthCheckHospitalEN/CatholicUniversityEN.html"><div>ENGLISH</div></a>
+                            <a href="/doctor/Dr_RoYoungWoo.html"><div>KOREAN</div></a>
+                            <a href="/doctor/dermatologyEN/Dr_RoYoungWooEN.html"><div>ENGLISH</div></a>
                         </div>
                     </div>
                 </li>
@@ -65,40 +65,48 @@
         <section id="hospital">
             <div class="hospital-container">
                 <div class="hospital-area">
-                    <h2>Health Check-up | Cancer treatment</h2>
+                    <h2>Laser | Toxin | Filler</h2>
                     <div class="nav-cont">
                         <ul>
-                            <!-- <li class="nav1"><a href="/healthCheckEN.html">All View</a></li> -->
-                            <li class="nav1" style="font-size: 10px;"><a href="/healthCheckInfoEN.html" style="color: #07c21f; border-bottom: 2px solid #07c21f;">Comprehensive health Check-up </a></li>
-                            <li class="nav2" style="font-size: 10px;"><a style="display: none;"></a></li>
-                            <li class="nav3" style="font-size: 10px;"><a style="display: none;"></a></li>
+                            <li class="nav1"><a href="/LaserBotoxFillerEN.html">All View</a></li>
+                            <li class="nav2"><a href="/ThermageEN.html" >Thermage</a></li>
+                            <li class="nav3"><a href="/UltheraEN.html" >Ulthera</a></li>
+                            <li class="nav4"><a href="/10sermarEN.html" style="color: #07c21f; border-bottom: 2px solid #07c21f;">10THERMA </a></li>
+                            <li class="nav5"><a href="/TitaniumEN.html">Titanium</a></li>
+                            <li class="nav6"><a href="/PotenzaEN.html">Potenza</a></li>
+                            <li class="nav7"><a href="/IPL_EN.html">IPL</a></li>
+                            <li class="nav8"><a href="/ScarEN.html" >Scar </a></li>
+                            <li class="nav9"><a href="/BotoxEN.html">Toxin</a></li>
+                            <li class="nav10"><a href="/FillerEN.html" >Filler </a></li>
+                            <li class="nav11"><a href="/RejuranEN.html">Rejuran</a></li>
+                            <li class="nav12"><a href="/JuvelookEN.html">Juvelook</a></li>
+                            <li class="nav13"><a style="display: none;"></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="hospitalInfo">
                     <div class="hospitalInfo__top">
-                        <h3>Catholic Medical Center (CMC)
-                            of the Catholic University of Korea (CUK)</h3>
+                        <h3>Oracle Dermatology Cheongdam</h3>
                     </div>
                     <div class="hospitalInfo__midle">
                         <div class="hospitalInfo__img">
-                            <img src="/img/healthCheckEN/가톨릭대학교가톨릭중앙의료원.jpg" alt="">
+                            <img src="/img/LaserBotoxFillerEN/오라클피부과_청담.jpg" alt="">
                         </div>
                     </div>
                     <div class="hospitalInfo__bottom">
-<!--                         <div class="doctor__img">
-                            <img src="/img/LaserBotoxFillerInfo/DR피부과_텐써마_방숙현.jpg" alt="">
+                        <div class="doctor__img">
+                            <img src="/img/LaserBotoxFillerInfo/오라클피부과청담_필러_노영우.jpg" alt="노영우원장">
                         </div>
                         <ul>
-                            <li><h3>방숙현 원장</h3></li>
-                            <li>이화여자대학교 의과대학 의학사</li>
-                            <li>이화여자대학교 의과대학원 의학 석사</li>
-                            <li>이화여자대학교 의료원 외래교수</li>
-                            <li>대한 피부과의사회 정회원</li>
-                            <li>대한 비만체형학회 정회원</li>
-                        </ul> -->
+                            <li><h3>Ro Young Woo</h3></li>
+                            <li>Board-certified dermatologist</li>
+                            <li>Member of the Korean Academy of Dermatology</li>
+                            <li>Member of the Korean Society of Dermatologic Surgeons</li>
+                            <li>Member of the Korean Laser Society</li>
+                            <li>Member of the Korean Society of Aesthetic Dermatology</li>
+                        </ul>
                     </div>
-                    <button type="button" onclick="location.href='https://www.cmc.or.kr/en.main.main.sp'">Go to the hospital website ></button>
+                    <button type="button" onclick="location.href='https://en.cdoracleclinic.com/'">Go to the hospital website ></button>
                 </div>
             </div>
         </section>
@@ -123,7 +131,6 @@
 <!-- footer -->
 <script src="/js/footer.js"></script>
 
-<script src="/js/Responsive.js"></script>
 <script src="/js/floatingEN.js"></script>
 
 <script>
@@ -134,11 +141,11 @@
         function updateImage() {
             const screenWidth = window.innerWidth;
             if (screenWidth < 768) {
-                imgElement.src = "/img/healthCheckEN/가톨릭대학교가톨릭중앙의료원_M_검진.jpg";
+                imgElement.src = "/img/LaserBotoxFillerEN/오라클피부과_청담_M_레이저.jpg";
             } else if (screenWidth < 1024) {
-                imgElement.src = "/img/healthCheckEN/가톨릭대학교가톨릭중앙의료원_T_검진.jpg";
+                imgElement.src = "/img/LaserBotoxFillerEN/오라클피부과_청담_T_레이저.jpg";
             } else {
-                imgElement.src = "/img/healthCheckEN/가톨릭대학교가톨릭중앙의료원.jpg";
+                imgElement.src = "/img/LaserBotoxFillerEN/오라클피부과_청담.jpg";
             }
         }
 
