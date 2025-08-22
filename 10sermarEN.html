@@ -76,26 +76,21 @@
                             <li class="nav4"><a href="/10sermarEN.html">10THERMA </a></li>
                             <li class="nav5"><a href="/TitaniumEN.html">Titanium</a></li>
                             <li class="nav6"><a href="/PotenzaEN.html">Potenza</a></li>
-                            <li class="nav7"><a href="/IPL_EN.html">IPL</a></li>
+                            <li class="nav7"><a href="/10PL_EN.html">10PL</a></li>
                             <li class="nav8"><a href="/ScarEN.html">Scar </a></li>
                             <li class="nav9"><a href="/BotoxEN.html">Toxin</a></li>
                             <li class="nav10"><a href="/FillerEN.html">Filler </a></li>
                             <li class="nav11"><a href="/RejuranEN.html">Rejuran</a></li>
                             <li class="nav12"><a href="/JuvelookEN.html">Juvelook</a></li>
-                            <li class="nav13"><a href="/JuvelookEN.html" style="display: none;">Juvelook</a></li>
+                            <li class="nav13"><a href="/ShurinkEN.html" >Shurink </a></li>
+                            <li class="nav14"><a href="/DensityEN.html" >Density </a></li>
+                            <li class="nav15"><a href="/10theraEN.html" >10THERA</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="hospital__bottom">
                     <ul>
-                        <li style="border: 1px solid #e4e4e4;">
-                            <a href="/doctor/dermatologyEN/Dr_RoYoungWoo_TenEN.html">
-                                <div class="hospital__list" style="display: none;">
-                                    <span style="font-size: 13px;">Oracle Dermatology Cheongdam</span>
-                                    <span>Dr.Jaehwa Kim</span>
-                                </div>
-                            </a>
-                        </li>
+
                         <li style="border: 1px solid #e4e4e4;">
                             <a href="/doctor/dermatologyEN/Dr_JeonHeeDaeEN.html">
                                 <div class="hospital__list" style="display: none;">
@@ -120,8 +115,21 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="">
-                            <a href="#"><div class="hospital__list"></div></a>
+                        <li style="border: 1px solid #e4e4e4;">
+                            <a href="/doctor/dermatologyEN/Dr_KimSangYeopEN.html">
+                                <div class="hospital__list" style="display: none;">
+                                    <span style="font-size: 13px;">JF피부과</span>
+                                    <span>Dr.KimSangYeopEN</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="border: 1px solid #e4e4e4;">
+                            <a href="/doctor/dermatologyEN/Dr_ChoSiHyungEN.html">
+                                <div class="hospital__list" style="display: none;">
+                                    <span style="font-size: 13px;">부산스타피부과</span>
+                                    <span>Dr.ChoSiHyung</span>
+                                </div>
+                            </a>
                         </li>
                         <li class="">
                             <a href="#"><div class="hospital__list"></div></a>
@@ -145,14 +153,17 @@
 <script>
     function preloadImages() {
     const images = [
-        "/img/LaserThumEN/썸네일_오라클피부과_청담_03.jpg",
         "/img/LaserThumEN/썸네일_바노바기_피부과.jpg",
         "/img/LaserThumEN/썸네일_DR피부과.jpg",
         "/img/LaserThumEN/썸네일_연세더셀피부과.jpg",
-        "/img/LaserBotoxFillerENM/썸네일_오라클피부과_청담_03.png",
+        "/img/LaserThumEN/썸네일_JF피부과.jpg",
+        "/img/LaserThumEN/썸네일_부산스타피부과.jpg",
+
         "/img/LaserBotoxFillerENM/썸네일_바노바기_피부과.png",
         "/img/LaserBotoxFillerENM/썸네일_DR피부과.png",
-        "/img/LaserBotoxFillerENM/썸네일_연세더셀피부과.png"
+        "/img/LaserBotoxFillerENM/썸네일_연세더셀피부과.png",
+        "/img/LaserBotoxFillerENM/썸네일_JF피부과.png",
+        "/img/LaserBotoxFillerENM/썸네일_부산스타피부과.png",
     ];
 
     images.forEach((src) => {
@@ -165,17 +176,19 @@
     const listItems = document.querySelectorAll(".hospital__bottom li");
 
     const desktopImages = [
-        "/img/LaserThumEN/썸네일_오라클피부과_청담_03.jpg",
         "/img/LaserThumEN/썸네일_바노바기_피부과.jpg",
         "/img/LaserThumEN/썸네일_DR피부과.jpg",
         "/img/LaserThumEN/썸네일_연세더셀피부과.jpg",
+        "/img/LaserThumEN/썸네일_JF피부과.jpg",
+        "/img/LaserThumEN/썸네일_부산스타피부과.jpg",
     ];
 
     const mobileImages = [
-        "/img/LaserBotoxFillerENM/썸네일_오라클피부과_청담_03.png",
         "/img/LaserBotoxFillerENM/썸네일_바노바기_피부과.png",
         "/img/LaserBotoxFillerENM/썸네일_DR피부과.png",
-        "/img/LaserBotoxFillerENM/썸네일_연세더셀피부과.png"
+        "/img/LaserBotoxFillerENM/썸네일_연세더셀피부과.png",
+        "/img/LaserBotoxFillerENM/썸네일_JF피부과.png",
+        "/img/LaserBotoxFillerENM/썸네일_부산스타피부과.png",
     ];
 
     listItems.forEach((listItem, index) => {

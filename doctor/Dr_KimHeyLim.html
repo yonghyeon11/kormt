@@ -51,8 +51,8 @@
                     
                         <!-- 드롭다운 시 보여질 태그 -->
                         <div class="dropdown_content">
-                            <a href="/doctor/plastic/Dr_AhnkyongCheon.html"><div>KOREAN</div></a>
-                            <a href="/doctor/plasticEN/Dr_AhnkyongCheonEN.html"><div>ENGLISH</div></a>
+                            <a href="/doctor/Dr_KimHeyLim.html"><div>KOREAN</div></a>
+                            <a href="/doctor/dermatologyEN/Dr_KimHeyLimEN.html"><div>ENGLISH</div></a>
                         </div>
                     </div>
                 </li>
@@ -65,91 +65,98 @@
         <section id="hospital">
             <div class="hospital-container">
                 <div class="hospital-area">
-                    <h2>성형외과</h2>
+                    <h2>레이저 | 톡신 | 필러</h2>
                     <div class="nav-cont">
                         <ul>
-                            <li class="nav1"><a href="/plasticKR.html">전체보기</a></li>
-                            <li class="nav2"><a href="/plastic/eyesKR.html" >눈</a></li>
-                            <li class="nav3"><a href="/plastic/noseKR.html">코</a></li>
-                            <li class="nav4"><a href="/plastic/liftingKR.html" >안면리프팅</a></li>
-                            <li class="nav5"><a href="/plastic/breastKR.html" >가슴확대</a></li>
-                            <li class="nav6"><a href="/plastic/liposuctionKR.html" style="color: #07c21f; border-bottom: 2px solid #07c21f;">지방흡입</a></li>
-                            <li class="nav7"><a href="/plastic/contourKR.html">윤곽수술</a></li>
-                            <li class="nav8"><a href="/plastic/hairTransplantKR.html">모발이식</a></li>
-                            <li class="nav9"><a href="/plastic/hairTransplantKR.html" style="display: none;">모발이식</a></li>
-                            
+                            <li class="nav1"><a href="/LaserBotoxFiller.html">전체보기</a></li>
+                            <li class="nav2"><a href="/ThermageKR.html" >써마지</a></li>
+                            <li class="nav3"><a href="/UltheraKR.html" >울쎄라</a></li>
+                            <li class="nav4"><a href="/10sermarKR.html">텐써마</a></li>
+                            <li class="nav5"><a href="/TitaniumKR.html">티타늄</a></li>
+                            <li class="nav6"><a href="/PotenzaKR.html">포텐자</a></li>
+                            <li class="nav7"><a href="/10PL_KR.html">10PL</a></li>
+                            <li class="nav8"><a href="/ScarKR.html">흉터</a></li>
+                            <li class="nav9"><a href="/BotoxKR.html">톡신</a></li>
+                            <li class="nav10"><a href="/FillerKR.html">필러</a></li>
+                            <li class="nav11"><a href="/RejuranKR.html">리쥬란</a></li>
+                            <li class="nav12"><a href="/JuvelookKR.html">쥬베룩</a></li>
+                            <li class="nav13"><a href="/ShurinkKR.html" style="color: #07c21f; border-bottom: 2px solid #07c21f;">슈링크</a></li>
+                            <li class="nav14"><a href="/DensityKR.html">덴서티</a></li>
+                            <li class="nav15"><a href="/10theraKR.html">텐쎄라</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="hospitalInfo">
                     <div class="hospitalInfo__top">
-                        <h3>리디안의원</h3>
+                        <h3>블리비 의원</h3>
                     </div>
                     <div class="hospitalInfo__midle">
                         <div class="hospitalInfo__img">
-                            <img src="/img/plastickInfo/리디안의원.jpg" alt="">
+                            <img src="/img/LaserBotoxFillerInfo/블리비의원.jpg" alt="">
                         </div>
                     </div>
                     <div class="hospitalInfo__bottom">
                         <div class="doctor__img">
-                            <img src="/img/plastickInfo/리디안의원_성형_안경천.jpg" alt="">
+                            <img src="/img/LaserBotoxFillerInfo/블리비의원_슈링크_김혜림.jpg" alt="">
                         </div>
                         <ul>
-                            <li><h3>안경천 원장</h3></li>
-                            <li>리디안의원 대표 원장</li>
-                            <li>고려대학교 의과대학 졸업</li>
-                            <li>고려대학교 의과대학 외래교수</li>
-                            <li>Top 100 Health Professional 2008, in thearena of Aesthetic Medicine and Stem Cell Therapy</li>
-                            <li>(줄기세포 미용의학과 분야 세계 100대 명의)</li>
+                            <li><h3>김혜림 원장</h3></li>
+                            <li>대한미용성형레이저의학회 정회원</li>
+                            <li>대한레이저피부모발학회 정회원</li>
+                            <li>대한비만체형학회 정회원</li>
+                            <li>대한미용외과학회 정회원</li>
+                            <li>대한필러학회 정회원</li>
                         </ul>
                     </div>
-                    <button type="button" onclick="location.href='https://lydianc.com/main/'">병원 홈페이지 바로가기 ></button>
+                    <button type="button" onclick="location.href='https://www.velyb.kr/'">병원 홈페이지 바로가기 ></button>
                 </div>
             </div>
         </section>
     </div>
-    
-    <!--플로팅 베너-->
-    <div id="floatingBannerContainer"></div>
+        <!--플로팅 베너-->
+        <div id="floatingBannerContainer"></div>
         <!-- footer -->
         <div data-include-path="/footerKR.html"></div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const imgElement = document.querySelector(".hospitalInfo__img img");
+                if (!imgElement) return;
+        
+                function updateImage() {
+                    const screenWidth = window.innerWidth;
+                    if (screenWidth < 768) {
+                        imgElement.src = "/img/LaserBotoxFillerInfo/블리비의원_M.png";
+                    } else if (screenWidth < 1024) {
+                        imgElement.src = "/img/LaserBotoxFillerInfo/블리비의원_T.png";
+                    } else {
+                        imgElement.src = "/img/LaserBotoxFillerInfo/블리비의원.jpg";
+                    }
+                }
+        
+                window.addEventListener("resize", updateImage);
+                updateImage();
+            });
+        </script>
+        <!-- 어썸 아이콘 -->
+        <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
+
+        <!-- 반응형 헤더 -->
+        <script src="/js/move.js"></script>
+
+        <!-- 드롭다운 -->
+        <script src="/js/dropdown.js"></script>
+
+        <!-- 네비게이션 이벤트 -->
+        <script src="/js/navEvent.js"></script>
+
+        <!-- footer -->
+        <script src="/js/footer.js"></script>
+
+        <script src="/js/floating.js"></script>
+
 </body>
-<!-- 어썸 아이콘 -->
-<script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
 
-<!-- 반응형 헤더 -->
-<script src="/js/move.js"></script>
 
-<!-- 드롭다운 -->
-<script src="/js/dropdown.js"></script>
-
-<!-- 네비게이션 이벤트 -->
-<script src="/js/navEvent.js"></script>
-
-<!-- footer -->
-<script src="/js/footer.js"></script>
-
-<script src="/js/floating.js"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const imgElement = document.querySelector(".hospitalInfo__img img");
-        if (!imgElement) return;
-
-        function updateImage() {
-            const screenWidth = window.innerWidth;
-            if (screenWidth < 768) {
-                imgElement.src = "/img/plastickInfo/리디안의원_M.jpg";
-            } else if (screenWidth < 1024) {
-                imgElement.src = "/img/plastickInfo/리디안의원_T.jpg";
-            } else {
-                imgElement.src = "/img/plastickInfo/리디안의원.jpg";
-            }
-        }
-
-        window.addEventListener("resize", updateImage);
-        updateImage();
-    });
-</script>
 
 </html>

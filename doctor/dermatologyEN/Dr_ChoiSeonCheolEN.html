@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/ThermageKR.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/DoctorInfo.css">
     <link rel="icon" href="/img/favicon.ico">
     <title>KOREA MEDI TOUR</title>
-
-    <script src="/js/floatingEN.js"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar__container">
             <div class="navbar__logo">
-                <a href="./indexEN.html"><img src="/img/logo.png" alt=""></a>
+                <a href="/indexEN.html"><img src="/img/logo.png" alt=""></a>
             </div>                                                    
             <ul class="navbar__menu">
                 <li class="dropdown"><a href="/indexEN.html">Affiliated Hospital</a>
@@ -53,8 +51,8 @@
                     
                         <!-- 드롭다운 시 보여질 태그 -->
                         <div class="dropdown_content">
-                            <a href="/IPL_KR.html"><div>KOREAN</div></a>
-                            <a href="/IPL_EN.html"><div>ENGLISH</div></a>
+                            <a href="/doctor/Dr_ChoiSeonCheol.html"><div>KOREAN</div></a>
+                            <a href="/doctor/dermatologyEN/Dr_ChoiSeonCheolEN.html"><div>ENGLISH</div></a>
                         </div>
                     </div>
                 </li>
@@ -73,7 +71,7 @@
                             <li class="nav1"><a href="/LaserBotoxFillerEN.html">All View</a></li>
                             <li class="nav2"><a href="/ThermageEN.html">Thermage</a></li>
                             <li class="nav3"><a href="/UltheraEN.html">Ulthera</a></li>
-                            <li class="nav4"><a href="/10sermarEN.html">10THERMA </a></li>
+                            <li class="nav4"><a href="/10sermarEN.html" >10THERMA </a></li>
                             <li class="nav5"><a href="/TitaniumEN.html">Titanium</a></li>
                             <li class="nav6"><a href="/PotenzaEN.html">Potenza</a></li>
                             <li class="nav7"><a href="/IPL_EN.html">IPL</a></li>
@@ -82,45 +80,51 @@
                             <li class="nav10"><a href="/FillerEN.html">Filler </a></li>
                             <li class="nav11"><a href="/RejuranEN.html">Rejuran</a></li>
                             <li class="nav12"><a href="/JuvelookEN.html">Juvelook</a></li>
-                            <li class="nav13"><a href="/JuvelookEN.html" style="display: none;">Juvelook</a></li>
+                            <li class="nav13"><a href="/ShurinkEN.html">Shurink </a></li>
+                            <li class="nav14"><a href="/DensityEN.html">Density </a></li>
+                            <li class="nav15"><a href="/10theraEN.html" style="color: #07c21f; border-bottom: 2px solid #07c21f;">10THERA</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="hospital__bottom">
-                    <ul>
-                        <li class="">
-                            <a href="#"><div class="hospital__list"></div></a>
-                        </li>
-                        <li class="">
-                            <a href="#"><div class="hospital__list"></div></a>
-                        </li>
-                        <li class="">
-                            <a href="#"><div class="hospital__list"></div></a>
-                        </li>
-                        <li class="">
-                            <a href="#"><div class="hospital__list"></div></a>
-                        </li>
-                        <li class="">
-                            <a href="#"><div class="hospital__list"></div></a>
-                        </li>
-                        <li class="">
-                            <a href="#"><div class="hospital__list"></div></a>
-                        </li>
-                        <li class="">
-                            <a href="#"><div class="hospital__list"></div></a>
-                        </li>
-                        <li class="">
-                            <a href="#"><div class="hospital__list"></div></a>
-                        </li>
-                    </ul>
+                <div class="hospitalInfo">
+                    <div class="hospitalInfo__top">
+                        <h3>Flex Dermatology Clinic</h3>
+                    </div>
+                    <div class="hospitalInfo__midle">
+                        <div class="hospitalInfo__img">
+                            <img src="/img/LaserBotoxFillerEN/플렉스피부과.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="hospitalInfo__bottom">
+                        <div class="doctor__img">
+                            <img src="/img/LaserBotoxFillerInfo/플렉스피부과_텐쎄라_최선철.jpg" alt="">
+                        </div>
+                        <ul>
+                            <li><h3>Dr.Choi Sun Chul</h3></li>
+                            <li>- Board-Certified Dermatologist</li>
+                            <li>- Chief Doctor, Flex Dermatology</li>
+                            <li>- Visiting Professor, Department of Dermatology, Sungkyunkwan University School of Medicine, Samsung Medical Center</li>
+                            <li>- Member, Korean Dermatological Association</li>
+                            <li>- Member, Korean Society for Dermatologic Surgery</li>
+                            <li>- Member, Korean Academy of Anti-Aging Dermatology</li>
+                            <li>- Member, Korean Acne Association</li>
+
+                              
+                             
+                              
+                              
+                             
+                        </ul>
+                    </div>
+                    <button type="button" onclick="location.href='https://flexskin.co.kr/'">Go to the hospital website ></button>
                 </div>
             </div>
         </section>
     </div>
         <!--플로팅 베너-->
         <div id="floatingBannerContainer"></div>
-    <!-- footer -->
-<div data-include-path="footerEN.html"></div>
+<!-- footer -->
+<div data-include-path="/footerEN.html"></div>
 </body>
 <!-- 어썸 아이콘 -->
 <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
@@ -137,7 +141,26 @@
 <!-- footer -->
 <script src="/js/footer.js"></script>
 
-<script src="./js/Responsive.js"></script>
+<script src="/js/floatingEN.js"></script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const imgElement = document.querySelector(".hospitalInfo__img img");
+        if (!imgElement) return;
 
+        function updateImage() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 768) {
+                imgElement.src = "/img/LaserBotoxFillerEN/플렉스피부과_M.jpg";
+            } else if (screenWidth < 1024) {
+                imgElement.src = "/img/LaserBotoxFillerEN/플렉스피부과_T.jpg";
+            } else {
+                imgElement.src = "/img/LaserBotoxFillerEN/플렉스피부과.jpg";
+            }
+        }
+
+        window.addEventListener("resize", updateImage);
+        updateImage();
+    });
+</script>
 </html>

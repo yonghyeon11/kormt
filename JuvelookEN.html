@@ -76,20 +76,27 @@
                             <li class="nav4"><a href="/10sermarEN.html">10THERMA </a></li>
                             <li class="nav5"><a href="/TitaniumEN.html">Titanium</a></li>
                             <li class="nav6"><a href="/PotenzaEN.html">Potenza</a></li>
-                            <li class="nav7"><a href="/IPL_EN.html">IPL</a></li>
+                            <li class="nav7"><a href="/10PL_EN.html">10PL</a></li>
                             <li class="nav8"><a href="/ScarEN.html">Scar </a></li>
                             <li class="nav9"><a href="/BotoxEN.html">Toxin</a></li>
                             <li class="nav10"><a href="/FillerEN.html">Filler </a></li>
                             <li class="nav11"><a href="/RejuranEN.html">Rejuran</a></li>
                             <li class="nav12"><a href="/JuvelookEN.html">Juvelook</a></li>
-                            <li class="nav13"><a href="/JuvelookEN.html" style="display: none;">Juvelook</a></li>
+                            <li class="nav13"><a href="/ShurinkEN.html" >Shurink </a></li>
+                            <li class="nav14"><a href="/DensityEN.html" >Density </a></li>
+                            <li class="nav15"><a href="/10theraEN.html" >10THERA</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="hospital__bottom">
                     <ul>
-                        <li class="">
-                            <a href="#"><div class="hospital__list"></div></a>
+                        <li style="border: 1px solid #e4e4e4;">
+                            <a href="/doctor/dermatologyEN/Dr_ShinJiYeonEN.html">
+                                <div class="hospital__list" style="display: none;">
+                                    <span style="font-size: 13px;">헤브피부과 </span>
+                                    <span>Dr.신지연  </span>
+                                </div>
+                            </a>
                         </li>
                         <li class="">
                             <a href="#"><div class="hospital__list"></div></a>
@@ -121,6 +128,57 @@
         <div id="floatingBannerContainer"></div>
     <!-- footer -->
 <div data-include-path="footerEN.html"></div>
+
+<script>
+    function preloadImages() {
+    const images = [
+        "/img/LaserThumEN/썸네일_헤브피부과.jpg",
+
+        "/img/LaserBotoxFillerENM/썸네일_헤브피부과.png",
+  
+    ];
+
+    images.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+    });
+    }
+
+    function updateBackground() {
+    const listItems = document.querySelectorAll(".hospital__bottom li");
+
+    const desktopImages = [
+        "/img/LaserThumEN/썸네일_헤브피부과.jpg",
+
+
+    ];
+
+    const mobileImages = [
+        "/img/LaserBotoxFillerENM/썸네일_헤브피부과.png",
+
+
+    ];
+
+    listItems.forEach((listItem, index) => {
+        if (index < desktopImages.length) {
+        const newImage = window.innerWidth <= 769 ? mobileImages[index] : desktopImages[index];
+
+        listItem.style.backgroundImage = `url(${newImage})`;
+        listItem.style.backgroundSize = "cover";
+        listItem.style.backgroundPosition = "center";
+        }
+    });
+    }
+
+    // 실행 순서 문제 방지: DOM 로드 후 바로 실행
+    document.addEventListener("DOMContentLoaded", function () {
+    preloadImages();
+    updateBackground();
+    });
+
+    // 창 크기 변경 시 실행
+    window.addEventListener("resize", updateBackground);
+</script>
 </body>
 <!-- 어썸 아이콘 -->
 <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>

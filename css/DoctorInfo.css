@@ -129,8 +129,8 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-    'a b c d e f g'
-    'a h i j k l m';
+    'a b c d e f g n'
+    'a h i j k l m o';
 }
 
 .nav-cont li{
@@ -212,7 +212,8 @@ li a.active {
         'a b c ' 
         'd e f ' 
         'g h i ' 
-        'j k l ';
+        'j k l '
+        'm n o';
         gap: 1px;
 
     }
